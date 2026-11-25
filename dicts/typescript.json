@@ -1,0 +1,348 @@
+{
+  "_meta": {
+    "language": "typescript",
+    "version": "0.3.0",
+    "description": "TypeScript-exclusive natural canonical + synonym mappings (v0.3)",
+    "entry_count": 28
+  },
+  "entries": {
+    "satisfies": {
+      "en": "ts_satisfies_type_check",
+      "ko": "형식충족확인",
+      "synonyms_ko": [
+        "타입만족검사"
+      ],
+      "synonyms_en": [
+        "check_satisfies_type"
+      ],
+      "role_ko": "추론 타입 유지하며 형식 일치 검사 (TypeScript)",
+      "role_en": "Validate expression matches a TypeScript type without widening",
+      "grammar_ko": "[값] 형식충족확인 [타입]",
+      "grammar_ex_ko": "설정값 형식충족확인 기본설정"
+    },
+    "Partial": {
+      "en": "ts_partial_optional_fields",
+      "ko": "선택속성변환형",
+      "synonyms_ko": [
+        "부분필드허용형"
+      ],
+      "synonyms_en": [
+        "all_fields_optional_type"
+      ],
+      "role_ko": "모든 속성을 선택적(?)으로 바꾸는 유틸리티 타입",
+      "role_en": "Construct a type with all properties set to optional"
+    },
+    "Readonly": {
+      "en": "ts_readonly_properties_type",
+      "ko": "읽기전용속성변환형",
+      "synonyms_ko": [
+        "전체고정속성형"
+      ],
+      "synonyms_en": [
+        "all_fields_readonly_type"
+      ],
+      "role_ko": "모든 속성을 읽기 전용(readonly)으로 바꾸는 타입",
+      "role_en": "Construct a type with all properties set to readonly"
+    },
+    "Pick": {
+      "en": "ts_pick_subset_fields",
+      "ko": "속성골라담기형",
+      "synonyms_ko": [
+        "필드선별타입"
+      ],
+      "synonyms_en": [
+        "select_property_subset"
+      ],
+      "role_ko": "원하는 속성 몇 개만 뽑아 새 타입 만들기",
+      "role_en": "Construct a type by picking specific properties"
+    },
+    "Omit": {
+      "en": "ts_omit_excluded_fields",
+      "ko": "속성제외만들기형",
+      "synonyms_ko": [
+        "특정필드뺀타입"
+      ],
+      "synonyms_en": [
+        "exclude_property_subset"
+      ],
+      "role_ko": "특정 속성을 빼고 나머지 속성으로 새 타입 만들기",
+      "role_en": "Construct a type by omitting specific properties"
+    },
+    "Exclude": {
+      "en": "ts_exclude_union_member",
+      "ko": "유니온후보빼기형",
+      "synonyms_ko": [
+        "타입목록제외"
+      ],
+      "synonyms_en": [
+        "remove_union_members"
+      ],
+      "role_ko": "유니온 타입에서 특정 후보 타입 제거",
+      "role_en": "Exclude union members assignable to given type"
+    },
+    "NonNullable": {
+      "en": "ts_non_nullable_type",
+      "ko": "빈값제외확정형",
+      "synonyms_ko": [
+        "널미정의제거형"
+      ],
+      "synonyms_en": [
+        "strip_null_and_undefined"
+      ],
+      "role_ko": "타입에서 null과 undefined 제거",
+      "role_en": "Exclude null and undefined from a type"
+    },
+    "ReturnType": {
+      "en": "ts_function_return_type",
+      "ko": "함수반환형추출",
+      "synonyms_ko": [
+        "결과타입꺼내기"
+      ],
+      "synonyms_en": [
+        "extract_fn_return_type"
+      ],
+      "role_ko": "함수 타입의 반환값 타입 추출",
+      "role_en": "Obtain the return type of a function type"
+    },
+    "Parameters": {
+      "en": "ts_function_parameters_type",
+      "ko": "함수매개변수목록형",
+      "synonyms_ko": [
+        "입력인자튜플추출"
+      ],
+      "synonyms_en": [
+        "extract_fn_params_tuple"
+      ],
+      "role_ko": "함수 타입의 매개변수들을 튜플 타입으로 추출",
+      "role_en": "Obtain parameters of a function type as a tuple"
+    },
+    "Awaited": {
+      "en": "ts_awaited_unwrapped_type",
+      "ko": "비동기완료결과형",
+      "synonyms_ko": [
+        "프라미스껍질벗김형"
+      ],
+      "synonyms_en": [
+        "unwrap_promise_result_type"
+      ],
+      "role_ko": "Promise 안쪽 최종 결과 타입 추출",
+      "role_en": "Recursively unwrap awaited Promise value type"
+    },
+    "ConstructorParameters": {
+      "en": "ts_constructor_params_type",
+      "ko": "생성자매개변수목록형",
+      "synonyms_ko": [
+        "생성자인자추출형"
+      ],
+      "synonyms_en": [
+        "extract_ctor_params_tuple"
+      ],
+      "role_ko": "생성자 함수의 매개변수 타입 튜플 추출",
+      "role_en": "Extract constructor parameter types as tuple"
+    },
+    "InstanceType": {
+      "en": "ts_class_instance_type",
+      "ko": "클래스인스턴스형추출",
+      "synonyms_ko": [
+        "생성객체실체타입"
+      ],
+      "synonyms_en": [
+        "extract_ctor_instance_type"
+      ],
+      "role_ko": "생성자 함수/클래스가 만들어내는 객체 타입 추출",
+      "role_en": "Obtain the instance type of a constructor function type"
+    },
+    "ThisParameterType": {
+      "en": "ts_this_parameter_type",
+      "ko": "자기참조매개변수형",
+      "synonyms_ko": [
+        "디스인자타입추출"
+      ],
+      "synonyms_en": [
+        "extract_this_param_type"
+      ],
+      "role_ko": "함수 시그니처의 this 매개변수 타입 추출",
+      "role_en": "Extract type of the this parameter of a function"
+    },
+    "OmitThisParameter": {
+      "en": "ts_omit_this_parameter",
+      "ko": "자기참조매개변수제외형",
+      "synonyms_ko": [
+        "디스제거함수타입"
+      ],
+      "synonyms_en": [
+        "drop_this_param_from_fn"
+      ],
+      "role_ko": "함수 타입에서 this 매개변수 선언 제거",
+      "role_en": "Remove the this parameter from a function type"
+    },
+    "Uppercase": {
+      "en": "ts_uppercase_string_type",
+      "ko": "문자열타입대문자화",
+      "synonyms_ko": [
+        "리터럴대문자변환형"
+      ],
+      "synonyms_en": [
+        "uppercase_literal_type"
+      ],
+      "role_ko": "문자열 리터럴 타입을 모두 대문자로 변환",
+      "role_en": "Convert string literal type to uppercase"
+    },
+    "Lowercase": {
+      "en": "ts_lowercase_string_type",
+      "ko": "문자열타입소문자화",
+      "synonyms_ko": [
+        "리터럴소문자변환형"
+      ],
+      "synonyms_en": [
+        "lowercase_literal_type"
+      ],
+      "role_ko": "문자열 리터럴 타입을 모두 소문자로 변환",
+      "role_en": "Convert string literal type to lowercase"
+    },
+    "Capitalize": {
+      "en": "ts_capitalize_string_type",
+      "ko": "첫글자대문자화타입",
+      "synonyms_ko": [
+        "머리글자대문자형"
+      ],
+      "synonyms_en": [
+        "capitalize_literal_type"
+      ],
+      "role_ko": "문자열 리터럴 타입의 첫 글자만 대문자로 변환",
+      "role_en": "Convert first character of string literal type to uppercase"
+    },
+    "Uncapitalize": {
+      "en": "ts_uncapitalize_string_type",
+      "ko": "첫글자소문자화타입",
+      "synonyms_ko": [
+        "머리글자소문자형"
+      ],
+      "synonyms_en": [
+        "uncapitalize_literal_type"
+      ],
+      "role_ko": "문자열 리터럴 타입의 첫 글자만 소문자로 변환",
+      "role_en": "Convert first character of string literal type to lowercase"
+    },
+    "NoInfer": {
+      "en": "ts_block_type_inference",
+      "ko": "자동추론차단타입",
+      "synonyms_ko": [
+        "제네릭추론억제"
+      ],
+      "synonyms_en": [
+        "prevent_generic_inference"
+      ],
+      "role_ko": "특정 위치에서 제네릭 타입 추론 차단",
+      "role_en": "Block TypeScript type inference at a call-site position"
+    },
+    "ReadonlyArray": {
+      "en": "ts_readonly_array_type",
+      "ko": "읽기전용배열목록형",
+      "synonyms_ko": [
+        "수정불가배열타입"
+      ],
+      "synonyms_en": [
+        "immutable_array_interface"
+      ],
+      "role_ko": "요소 추가·삭제를 막는 읽기 전용 배열 인터페이스",
+      "role_en": "Immutable array interface without mutating methods"
+    },
+    "ReadonlyMap": {
+      "en": "ts_readonly_map_type",
+      "ko": "읽기전용사전맵형",
+      "synonyms_ko": [
+        "수정불가맵타입"
+      ],
+      "synonyms_en": [
+        "immutable_map_interface"
+      ],
+      "role_ko": "수정 메서드가 없는 읽기 전용 Map 인터페이스",
+      "role_en": "Immutable Map interface without set/delete methods"
+    },
+    "ReadonlySet": {
+      "en": "ts_readonly_set_type",
+      "ko": "읽기전용집합형",
+      "synonyms_ko": [
+        "수정불가집합타입"
+      ],
+      "synonyms_en": [
+        "immutable_set_interface"
+      ],
+      "role_ko": "수정 메서드가 없는 읽기 전용 Set 인터페이스",
+      "role_en": "Immutable Set interface without add/delete methods"
+    },
+    "PromiseLike": {
+      "en": "ts_promise_like_thenable",
+      "ko": "비동기약속호환인터페이스",
+      "synonyms_ko": [
+        "then가능비동기형"
+      ],
+      "synonyms_en": [
+        "thenable_async_interface"
+      ],
+      "role_ko": "then 메서드를 갖춘 모든 비동기 객체 호환 타입",
+      "role_en": "Structural interface matching objects with a .then method"
+    },
+    "PropertyKey": {
+      "en": "ts_object_property_key_union",
+      "ko": "객체속성키허용형",
+      "synonyms_ko": [
+        "속성이름공통타입"
+      ],
+      "synonyms_en": [
+        "valid_property_key_type"
+      ],
+      "role_ko": "객체 키로 쓸 수 있는 string | number | symbol 타입",
+      "role_en": "Union type of valid JS property keys (string | number | symbol)"
+    },
+    "ThisType": {
+      "en": "ts_contextual_this_marker",
+      "ko": "문맥디스지정타입",
+      "synonyms_ko": [
+        "객체메서드this표식"
+      ],
+      "synonyms_en": [
+        "marker_for_contextual_this"
+      ],
+      "role_ko": "객체 리터럴 안 메서드의 this 문맥 타입 지정 표식",
+      "role_en": "Marker interface specifying contextual this inside object literals"
+    },
+    "TemplateStringsArray": {
+      "en": "ts_template_strings_array",
+      "ko": "템플릿문자열조각배열형",
+      "synonyms_ko": [
+        "백틱문자조각목록"
+      ],
+      "synonyms_en": [
+        "tagged_template_strings"
+      ],
+      "role_ko": "태그드 템플릿 리터럴 첫 번째 인자의 불변 문자열 배열",
+      "role_en": "Readonly array of static string segments in tagged templates"
+    },
+    "IterableIterator": {
+      "en": "ts_iterable_iterator_type",
+      "ko": "순회겸용반복기타입",
+      "synonyms_ko": [
+        "이터러블반복자형"
+      ],
+      "synonyms_en": [
+        "iterable_and_iterator_pair"
+      ],
+      "role_ko": "Iterable과 Iterator 인터페이스를 동시에 만족하는 제네릭",
+      "role_en": "Type combining both Iterable and Iterator interfaces"
+    },
+    "PropertyDescriptor": {
+      "en": "ts_property_descriptor_type",
+      "ko": "속성설정명세객체형",
+      "synonyms_ko": [
+        "프로퍼티디스크립터타입"
+      ],
+      "synonyms_en": [
+        "object_property_descriptor"
+      ],
+      "role_ko": "Object.defineProperty 등에 쓰이는 속성 설명 객체 타입",
+      "role_en": "Type describing configurable/writable/enumerable property metadata"
+    }
+  }
+}

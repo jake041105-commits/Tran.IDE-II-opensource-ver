@@ -1,0 +1,1932 @@
+{
+  "_meta": {
+    "language": "c",
+    "version": "0.3.0",
+    "description": "Disjoint 1:N natural canonical + synonym mappings (v0.3)",
+    "entry_count": 386
+  },
+  "entries": {
+    "_Exit": {
+      "en": "terminate_process_immediately",
+      "ko": "즉시프로세스강제종료"
+    },
+    "abort": {
+      "en": "halt_program_abnormally",
+      "ko": "프로그램비정상즉시중단"
+    },
+    "abs": {
+      "en": "abs_value",
+      "ko": "절댓값",
+      "synonyms_ko": [
+        "음수떼기",
+        "순수크기",
+        "부호없애기"
+      ],
+      "synonyms_en": [
+        "positive_size",
+        "drop_minus"
+      ],
+      "grammar_ko": "[숫자] 절댓값",
+      "grammar_ex_ko": "차이 절댓값",
+      "grammar_en": "abs_value [number]",
+      "grammar_ex_en": "abs_value diff",
+      "role_ko": "마이너스 부호 뗀 크기",
+      "role_en": "Absolute distance from zero"
+    },
+    "accept": {
+      "en": "accept_socket",
+      "ko": "수락"
+    },
+    "access": {
+      "en": "check_path_access",
+      "ko": "경로접근검사"
+    },
+    "acos": {
+      "en": "inverse_cosine_radians",
+      "ko": "역코사인라디안계산"
+    },
+    "acosh": {
+      "en": "inverse_hyperbolic_cosine",
+      "ko": "역쌍곡선코사인계산"
+    },
+    "alarm": {
+      "en": "schedule_alarm_signal",
+      "ko": "알람신호예약"
+    },
+    "Alignas": {
+      "en": "declare_memory_alignment",
+      "ko": "메모리정렬기준지정"
+    },
+    "aligned_alloc": {
+      "en": "aligned_allocate_memory",
+      "ko": "정렬맞춤됨할당"
+    },
+    "Alignof": {
+      "en": "query_type_alignment_bytes",
+      "ko": "자료형정렬바이트크기"
+    },
+    "asctime": {
+      "en": "time_to_ascii",
+      "ko": "시각아스키문자열"
+    },
+    "asin": {
+      "en": "inverse_sine_radians",
+      "ko": "역사인라디안계산"
+    },
+    "asinh": {
+      "en": "inverse_hyperbolic_sine",
+      "ko": "역쌍곡선사인계산"
+    },
+    "assert": {
+      "en": "assert_true",
+      "ko": "단언"
+    },
+    "at_quick_exit": {
+      "en": "at_spot_fast_compact_quit_program",
+      "ko": "위치에서빠른간편종료빠져나감"
+    },
+    "atan": {
+      "en": "inverse_tangent_radians",
+      "ko": "역탄젠트라디안계산"
+    },
+    "atan2": {
+      "en": "two_arg_inverse_tangent",
+      "ko": "두인자역탄젠트각도"
+    },
+    "atanh": {
+      "en": "inverse_hyperbolic_tangent",
+      "ko": "역쌍곡선탄젠트계산"
+    },
+    "atexit": {
+      "en": "register_exit_cleanup_callback",
+      "ko": "종료시정리함수등록"
+    },
+    "atof": {
+      "en": "parse_ascii_to_double",
+      "ko": "문자열배정밀실수변환"
+    },
+    "atoi": {
+      "en": "parse_ascii_to_integer",
+      "ko": "문자열정수변환"
+    },
+    "atol": {
+      "en": "parse_ascii_to_long_int",
+      "ko": "문자열긴정수변환"
+    },
+    "Atomic": {
+      "en": "thread_safe_atomic_qualifier",
+      "ko": "원자적동시성접근한정자"
+    },
+    "auto": {
+      "en": "infer_or_select_automatically",
+      "ko": "자동추론설정"
+    },
+    "bind": {
+      "en": "link_handler_port_or_this",
+      "ko": "대상에연결고정"
+    },
+    "Bool": {
+      "en": "c_standard_boolean_type",
+      "ko": "씨언어참거짓논리형"
+    },
+    "bool": {
+      "en": "logic_bool",
+      "ko": "논리형",
+      "synonyms_ko": [
+        "참거짓형",
+        "불리언짧음",
+        "맞틀림형"
+      ],
+      "synonyms_en": [
+        "short_boolean",
+        "truth_type"
+      ],
+      "grammar_ko": "[값] 논리형",
+      "grammar_ex_ko": "완료 논리형",
+      "grammar_en": "logic_bool [value]",
+      "grammar_ex_en": "logic_bool done",
+      "role_ko": "참·거짓 논리 자료형 (Python/Swift/C)",
+      "role_en": "Short boolean logic type"
+    },
+    "break": {
+      "en": "break_loop",
+      "ko": "반복탈출",
+      "synonyms_ko": [
+        "즉시멈춤",
+        "빠져나가기",
+        "루프종료",
+        "그만두기"
+      ],
+      "synonyms_en": [
+        "exit_loop",
+        "stop_repeating"
+      ],
+      "grammar_ko": "반복탈출  (반복문 안에서 멈출 때 사용)",
+      "grammar_ex_ko": "반복탈출",
+      "grammar_en": "break_loop",
+      "grammar_ex_en": "break_loop",
+      "role_ko": "반복문 즉시 중단",
+      "role_en": "Exit loop immediately"
+    },
+    "case": {
+      "en": "when_case",
+      "ko": "경우",
+      "synonyms_ko": [
+        "해당경우",
+        "케이스",
+        "갈래항목"
+      ],
+      "synonyms_en": [
+        "case_branch",
+        "match_case_arm"
+      ],
+      "grammar_ko": "경우 [비교값]: [할일]",
+      "grammar_ex_ko": "경우 1:",
+      "grammar_en": "when_case [value]: [action]",
+      "grammar_ex_en": "when_case 1",
+      "role_ko": "경우분기 안의 각 선택지",
+      "role_en": "Single switch branch option"
+    },
+    "cbrt": {
+      "en": "real_cube_root_function",
+      "ko": "실수세제곱근계산"
+    },
+    "ceil": {
+      "en": "round_up_nearest_integer",
+      "ko": "올림정수변환계산"
+    },
+    "char": {
+      "en": "single_char",
+      "ko": "문자"
+    },
+    "CHAR_BIT": {
+      "en": "single_char_bit",
+      "ko": "문자비트"
+    },
+    "CHAR_MAX": {
+      "en": "single_char_max",
+      "ko": "문자최대"
+    },
+    "CHAR_MIN": {
+      "en": "single_char_min",
+      "ko": "문자최소"
+    },
+    "chdir": {
+      "en": "change_directory",
+      "ko": "폴더이동"
+    },
+    "chmod": {
+      "en": "change_path_mode",
+      "ko": "경로권한변경"
+    },
+    "chown": {
+      "en": "change_file_owner_group",
+      "ko": "파일소유자및그룹변경"
+    },
+    "clearenv": {
+      "en": "clear_all_environment_vars",
+      "ko": "환경변수전체비우기"
+    },
+    "clearerr": {
+      "en": "reset_stream_error_flags",
+      "ko": "스트림오류상태초기화"
+    },
+    "clock": {
+      "en": "monotonic_or_wall_timer",
+      "ko": "시스템시계"
+    },
+    "clock_getres": {
+      "en": "query_clock_precision",
+      "ko": "시스템시계정밀도조회"
+    },
+    "clock_gettime": {
+      "en": "read_system_clock_time",
+      "ko": "시스템시계현재시각읽기"
+    },
+    "clock_settime": {
+      "en": "set_system_clock_time",
+      "ko": "시스템시계시각설정"
+    },
+    "close": {
+      "en": "close_resource",
+      "ko": "파일닫기",
+      "synonyms_ko": [
+        "연결닫기",
+        "정리하고닫기"
+      ],
+      "synonyms_en": [
+        "shut_file",
+        "finish_handle"
+      ],
+      "grammar_ko": "[파일] 파일닫기",
+      "grammar_ex_ko": "파일상자 파일닫기",
+      "grammar_en": "close_resource [file]",
+      "grammar_ex_en": "close_resource file",
+      "role_ko": "열었던 파일이나 연결 안전 종료",
+      "role_en": "Close open file or connection"
+    },
+    "closedir": {
+      "en": "close_directory_stream",
+      "ko": "폴더스트림닫기"
+    },
+    "Complex": {
+      "en": "real_plus_imaginary_number",
+      "ko": "복소수자료형"
+    },
+    "connect": {
+      "en": "establish_active_channel",
+      "ko": "통신연결열기"
+    },
+    "const": {
+      "en": "const_value",
+      "ko": "상수선언",
+      "synonyms_ko": [
+        "고정상자",
+        "불변상수",
+        "안바뀌는값"
+      ],
+      "synonyms_en": [
+        "fixed_box",
+        "locked_value",
+        "immutable_const"
+      ],
+      "grammar_ko": "상수선언 [이름]에 [값] 넣기",
+      "grammar_ex_ko": "상수선언 만점에 100 넣기",
+      "grammar_en": "const_value [name] = [value]",
+      "grammar_ex_en": "const_value max_score = 100",
+      "role_ko": "값이 안 바뀌는 상수 선언",
+      "role_en": "Constant immutable binding"
+    },
+    "constexpr": {
+      "en": "compile_time_constant_expr",
+      "ko": "컴파일시점상수표현식"
+    },
+    "continue": {
+      "en": "continue_next",
+      "ko": "다음차례",
+      "synonyms_ko": [
+        "이번건넘기",
+        "건너뛰기",
+        "계속진행"
+      ],
+      "synonyms_en": [
+        "skip_turn",
+        "next_iteration"
+      ],
+      "grammar_ko": "다음차례",
+      "grammar_ex_ko": "다음차례",
+      "grammar_en": "continue_next",
+      "grammar_ex_en": "continue_next",
+      "role_ko": "이번 회차만 건너뛰고 다음 반복으로",
+      "role_en": "Skip current iteration and move to next"
+    },
+    "copysign": {
+      "en": "combine_magnitude_with_sign",
+      "ko": "크기와부호결합실수"
+    },
+    "cos": {
+      "en": "trigonometric_cosine_ratio",
+      "ko": "삼각코사인계산"
+    },
+    "cosh": {
+      "en": "hyperbolic_cosine",
+      "ko": "쌍곡코사인"
+    },
+    "ctime": {
+      "en": "calendar_to_ascii",
+      "ko": "달력시각문자열"
+    },
+    "default": {
+      "en": "default_branch",
+      "ko": "기본값분기",
+      "synonyms_ko": [
+        "나머지기본",
+        "디폴트분기",
+        "기본선택"
+      ],
+      "synonyms_en": [
+        "fallback_default",
+        "standard_choice"
+      ],
+      "grammar_ko": "기본값분기: [기본 실행]",
+      "grammar_ex_ko": "기본값분기",
+      "grammar_en": "default_branch: [action]",
+      "grammar_ex_en": "default_branch",
+      "role_ko": "맞는 경우가 없을 때 기본 실행",
+      "role_en": "Default branch when no case matches"
+    },
+    "define": {
+      "en": "specify_constant_or_macro",
+      "ko": "상수매크로정의"
+    },
+    "difftime": {
+      "en": "elapsed_seconds_between_times",
+      "ko": "두시각차이초계산"
+    },
+    "div": {
+      "en": "integer_quotient_remainder_div",
+      "ko": "정수몫나머지나눗셈"
+    },
+    "dladdr": {
+      "en": "resolve_symbol_from_address",
+      "ko": "메모리주소심볼정보조회"
+    },
+    "dlclose": {
+      "en": "unload_shared_native_lib",
+      "ko": "동적공유라이브러리닫기"
+    },
+    "dlerror": {
+      "en": "fetch_dynamic_loader_error",
+      "ko": "동적적재기최근오류조회"
+    },
+    "dlopen": {
+      "en": "load_shared_native_library",
+      "ko": "동적공유라이브러리열기"
+    },
+    "dlsym": {
+      "en": "resolve_shared_lib_symbol",
+      "ko": "동적라이브러리심볼찾기"
+    },
+    "double": {
+      "en": "double_number_c",
+      "ko": "배정밀실수형"
+    },
+    "dup": {
+      "en": "duplicate_descriptor",
+      "ko": "기술자복제"
+    },
+    "dup2": {
+      "en": "duplicate_to_number",
+      "ko": "번호로기술자복제"
+    },
+    "else": {
+      "en": "otherwise_else",
+      "ko": "아니면",
+      "synonyms_ko": [
+        "그밖에",
+        "그렇지않으면",
+        "나머지경우",
+        "안맞으면"
+      ],
+      "synonyms_en": [
+        "fallback_else",
+        "if_not_so",
+        "or_else"
+      ],
+      "grammar_ko": "아니면 [할일]  (만약 줄 바로 다음 줄에 적기)",
+      "grammar_ex_ko": "아니면 불합격 출력",
+      "grammar_en": "otherwise_else [action]  (after an if block)",
+      "grammar_ex_en": "otherwise_else print fail",
+      "role_ko": "조건이 모두 아닐 때",
+      "role_en": "Fallback branch when condition is false"
+    },
+    "enum": {
+      "en": "named_choices",
+      "ko": "열거"
+    },
+    "EOF": {
+      "en": "end_of_input_stream_marker",
+      "ko": "파일입력끝표식"
+    },
+    "epoll_create": {
+      "en": "linux_io_poll_make_new",
+      "ko": "리눅스다중입출력감시생성"
+    },
+    "epoll_create1": {
+      "en": "epoll_create_one",
+      "ko": "사건대기생성일"
+    },
+    "epoll_wait": {
+      "en": "epoll_wait_pause",
+      "ko": "사건대기기다림"
+    },
+    "erf": {
+      "en": "gauss_error_function",
+      "ko": "가우스오차함수계산"
+    },
+    "erfc": {
+      "en": "complementary_error_function",
+      "ko": "여오차함수계산"
+    },
+    "errno": {
+      "en": "last_error_number",
+      "ko": "마지막오류번호"
+    },
+    "execl": {
+      "en": "exec_with_arg_list",
+      "ko": "인수목록으로실행교체"
+    },
+    "execle": {
+      "en": "exec_program_arg_env",
+      "ko": "환경포함새프로그램실행"
+    },
+    "execlp": {
+      "en": "exec_path_search_args",
+      "ko": "경로탐색새프로그램실행"
+    },
+    "execv": {
+      "en": "exec_program_arg_vector",
+      "ko": "배열인자새프로그램실행"
+    },
+    "execve": {
+      "en": "replace_process_image",
+      "ko": "프로세스영상교체"
+    },
+    "execvp": {
+      "en": "exec_path_arg_vector",
+      "ko": "경로배열새프로그램실행"
+    },
+    "exit": {
+      "en": "leave_block_or_halt_process",
+      "ko": "종료빠져나감"
+    },
+    "EXIT_FAILURE": {
+      "en": "quit_program_failed_outcome",
+      "ko": "종료빠져나감작업실패상태"
+    },
+    "EXIT_SUCCESS": {
+      "en": "quit_program_succeeded",
+      "ko": "종료빠져나감성공완료결과"
+    },
+    "exp": {
+      "en": "euler_e_raised_to_power",
+      "ko": "자연지수함수계산"
+    },
+    "exp2": {
+      "en": "power_of_two_exponent",
+      "ko": "이거듭제곱지수계산"
+    },
+    "fabs": {
+      "en": "floating_point_absolute_val",
+      "ko": "실수절댓값계산"
+    },
+    "false": {
+      "en": "bool_false",
+      "ko": "거짓",
+      "synonyms_ko": [
+        "틀림",
+        "펄스",
+        "거짓값"
+      ],
+      "synonyms_en": [
+        "no_false",
+        "wrong_flag"
+      ],
+      "grammar_ko": "거짓",
+      "grammar_ex_ko": "실패에 거짓 넣기",
+      "grammar_en": "bool_false",
+      "grammar_ex_en": "failed = bool_false",
+      "role_ko": "논리 거짓(아니다) 값",
+      "role_en": "Boolean false value"
+    },
+    "fchmod": {
+      "en": "set_open_file_permissions",
+      "ko": "열린파일권한모드변경"
+    },
+    "fcntl": {
+      "en": "file_control",
+      "ko": "파일제어"
+    },
+    "fdatasync": {
+      "en": "file_desc_at_async",
+      "ko": "파일기술자위치에서비동기"
+    },
+    "fdim": {
+      "en": "file_desc_im",
+      "ko": "파일기술자즉시"
+    },
+    "fgetc": {
+      "en": "read_char_from_stream",
+      "ko": "스트림에서문자읽기"
+    },
+    "FILE": {
+      "en": "named_document_on_storage_const",
+      "ko": "파일객체상수"
+    },
+    "float": {
+      "en": "decimal_float",
+      "ko": "소수형",
+      "synonyms_ko": [
+        "실수형",
+        "소수점수",
+        "플로트"
+      ],
+      "synonyms_en": [
+        "floating_num",
+        "cast_float"
+      ],
+      "grammar_ko": "[값] 소수형",
+      "grammar_ex_ko": "평균 소수형",
+      "grammar_en": "decimal_float [value]",
+      "grammar_ex_en": "decimal_float avg",
+      "role_ko": "소수점 있는 실수형",
+      "role_en": "Floating decimal number"
+    },
+    "floor": {
+      "en": "largest_integer_not_above",
+      "ko": "소수버림내림"
+    },
+    "fma": {
+      "en": "fused_multiply_then_add",
+      "ko": "정밀곱셈후덧셈연산"
+    },
+    "fmod": {
+      "en": "ieee_floating_point_remainder",
+      "ko": "부동소수나머지계산"
+    },
+    "for": {
+      "en": "repeat_loop",
+      "ko": "반복",
+      "synonyms_ko": [
+        "하나씩반복",
+        "차례반복",
+        "횟수반복",
+        "목록순회",
+        "포문"
+      ],
+      "synonyms_en": [
+        "loop_each",
+        "iterate_each",
+        "each_item",
+        "repeat_times"
+      ],
+      "grammar_ko": "[목록] 하나씩 꺼내 [할일]  또는  [횟수]번 반복",
+      "grammar_ex_ko": "점수 5번 반복",
+      "grammar_en": "repeat_loop each item in [list]",
+      "grammar_ex_en": "repeat_loop 5 times",
+      "role_ko": "목록이나 횟수만큼 반복",
+      "role_en": "For loop over items or count"
+    },
+    "fork": {
+      "en": "clone_process",
+      "ko": "프로세스복제"
+    },
+    "free": {
+      "en": "free_memory",
+      "ko": "해제"
+    },
+    "freeaddrinfo": {
+      "en": "release_address_info_list",
+      "ko": "주소정보목록메모리해제"
+    },
+    "frexp": {
+      "en": "split_float_mantissa_exponent",
+      "ko": "실수가수부지수부분리"
+    },
+    "fstat": {
+      "en": "query_fd_status",
+      "ko": "기술자상태조회"
+    },
+    "fsync": {
+      "en": "flush_descriptor",
+      "ko": "기술자동기화"
+    },
+    "ftruncate": {
+      "en": "os_file_handle_shorten_length",
+      "ko": "파일식별기술자길이잘라줄이기"
+    },
+    "Generic": {
+      "en": "type_parameterized_template",
+      "ko": "범용매개변수형"
+    },
+    "getaddrinfo": {
+      "en": "fetch_read_mem_or_net_addr_details_info",
+      "ko": "조회주소정보"
+    },
+    "getc": {
+      "en": "read_single_char_stream",
+      "ko": "스트림한글자읽기"
+    },
+    "getchar": {
+      "en": "read_one_char",
+      "ko": "문자하나읽기"
+    },
+    "getcwd": {
+      "en": "get_working_directory",
+      "ko": "작업폴더얻기"
+    },
+    "getenv": {
+      "en": "fetch_read_exec_environment",
+      "ko": "조회환경"
+    },
+    "gethostbyaddr": {
+      "en": "fetch_read_server_host_ordered_by_mem_or_net_addr",
+      "ko": "호스트별주소조회"
+    },
+    "gethostbyname": {
+      "en": "fetch_read_server_host_ordered_by_symbol_title",
+      "ko": "호스트별이름조회"
+    },
+    "gethostname": {
+      "en": "query_local_machine_hostname",
+      "ko": "로컬컴퓨터호스트이름조회"
+    },
+    "getnameinfo": {
+      "en": "address_to_host_service_name",
+      "ko": "주소를호스트이름변환"
+    },
+    "getopt": {
+      "en": "parse_command_line_options",
+      "ko": "명령행옵션차례로해석"
+    },
+    "getpid": {
+      "en": "current_process_id",
+      "ko": "지금프로세스번호"
+    },
+    "getppid": {
+      "en": "parent_process_id",
+      "ko": "부모프로세스번호"
+    },
+    "gets": {
+      "en": "multiple_fetch_read",
+      "ko": "조회들"
+    },
+    "getsockname": {
+      "en": "query_socket_local_address",
+      "ko": "소켓로컬주소포트조회"
+    },
+    "getsockopt": {
+      "en": "read_socket_option_value",
+      "ko": "소켓옵션설정값조회"
+    },
+    "getuid": {
+      "en": "fetch_real_user_id",
+      "ko": "실제사용자식별번호조회"
+    },
+    "gmtime": {
+      "en": "time_to_utc_parts",
+      "ko": "세계시각분해"
+    },
+    "goto": {
+      "en": "jump_control_to_named_label",
+      "ko": "지정라벨무조건이동"
+    },
+    "htonl": {
+      "en": "host_to_network_byte_long",
+      "ko": "호스트정수네트워크변환"
+    },
+    "htons": {
+      "en": "host_to_net_short",
+      "ko": "호스트짧은정수네트워크변환"
+    },
+    "hypot": {
+      "en": "hypotenuse_length",
+      "ko": "빗변길이"
+    },
+    "if": {
+      "en": "if_when",
+      "ko": "만약",
+      "synonyms_ko": [
+        "만일",
+        "조건이면",
+        "받는다면",
+        "입력된다면",
+        "일때",
+        "조건문"
+      ],
+      "synonyms_en": [
+        "when_if",
+        "suppose_if",
+        "condition_check",
+        "in_case"
+      ],
+      "grammar_ko": "만약 [대상] [비교값] [이상/이하/같음]이면 [할일]  (예: 만약 점수 80 이상이면 합격 출력)",
+      "grammar_ex_ko": "만약 점수 80 이상이면 합격 출력",
+      "grammar_en": "if_when [target] >= [value] then [action]",
+      "grammar_ex_en": "when score >= 80 print pass",
+      "role_ko": "조건 분기 시작",
+      "role_en": "Conditional branch"
+    },
+    "include": {
+      "en": "bring_header_or_subitem_in",
+      "ko": "포함불러오기"
+    },
+    "inet_addr": {
+      "en": "text_to_internet_address",
+      "ko": "문자열인터넷주소변환"
+    },
+    "inet_aton": {
+      "en": "ipv_dotted_to_binary",
+      "ko": "점표기주소를이진변환"
+    },
+    "inet_ntop": {
+      "en": "binary_addr_to_text_string",
+      "ko": "이진주소를문자열로변환"
+    },
+    "INFINITY": {
+      "en": "positive_unbounded_infinity_const",
+      "ko": "양의무한대특수값상수"
+    },
+    "inline": {
+      "en": "expand_directly_at_call_site",
+      "ko": "호출위치직접삽입"
+    },
+    "int": {
+      "en": "whole_int",
+      "ko": "정수형",
+      "synonyms_ko": [
+        "딱떨어지는수",
+        "소수없는수",
+        "정수변환"
+      ],
+      "synonyms_en": [
+        "integer_num",
+        "cast_int"
+      ],
+      "grammar_ko": "[값] 정수형",
+      "grammar_ex_ko": "나이 정수형",
+      "grammar_en": "whole_int [value]",
+      "grammar_ex_en": "whole_int age",
+      "role_ko": "정수 자료형·변환",
+      "role_en": "Whole integer type/conversion"
+    },
+    "INT_MAX": {
+      "en": "whole_number_max",
+      "ko": "정수최대"
+    },
+    "INT_MIN": {
+      "en": "whole_number_min",
+      "ko": "정수최소"
+    },
+    "ioctl": {
+      "en": "device_control",
+      "ko": "장치제어"
+    },
+    "isalnum": {
+      "en": "is_alnum_char",
+      "ko": "영문숫자문자여부"
+    },
+    "isalpha": {
+      "en": "is_alphabet_char",
+      "ko": "알파벳문자여부"
+    },
+    "isatty": {
+      "en": "is_terminal",
+      "ko": "단말여부"
+    },
+    "isblank": {
+      "en": "check_space_or_tab_char_c",
+      "ko": "공백또는탭문자여부씨"
+    },
+    "iscntrl": {
+      "en": "is_control_char",
+      "ko": "제어문자여부"
+    },
+    "isdigit": {
+      "en": "is_digit_char",
+      "ko": "숫자문자여부"
+    },
+    "isfinite": {
+      "en": "check_is_bounded_number",
+      "ko": "여부확인유한숫자"
+    },
+    "isgraph": {
+      "en": "is_graphic_char",
+      "ko": "그림문자여부"
+    },
+    "islower": {
+      "en": "is_lower_char",
+      "ko": "소문자여부"
+    },
+    "isnan": {
+      "en": "check_is_not_a_number",
+      "ko": "여부확인숫자아님특수값"
+    },
+    "isnormal": {
+      "en": "check_normal_finite_float",
+      "ko": "정규부동소수숫자여부"
+    },
+    "isprint": {
+      "en": "is_printable_char",
+      "ko": "인쇄문자여부"
+    },
+    "ispunct": {
+      "en": "is_punct_char",
+      "ko": "구두점여부"
+    },
+    "isspace": {
+      "en": "is_space_char",
+      "ko": "공백문자여부"
+    },
+    "isunordered": {
+      "en": "check_nan_unordered_floats",
+      "ko": "비교불가숫자아님포함여부"
+    },
+    "isupper": {
+      "en": "is_upper_char",
+      "ko": "대문자여부"
+    },
+    "iswalnum": {
+      "en": "check_wide_alphanumeric_char",
+      "ko": "넓은문자영숫자여부"
+    },
+    "isxdigit": {
+      "en": "is_hex_char",
+      "ko": "십육진수문자여부"
+    },
+    "kill": {
+      "en": "send_signal_to_pid",
+      "ko": "번호에신호보내기"
+    },
+    "kqueue": {
+      "en": "bsd_macos_kernel_event_poll",
+      "ko": "커널사건통지대기열"
+    },
+    "labs": {
+      "en": "long_absolute_value",
+      "ko": "긴절댓값"
+    },
+    "ldexp": {
+      "en": "multiply_by_power_of_two",
+      "ko": "실수에이거듭제곱곱하기"
+    },
+    "lgamma": {
+      "en": "log_gamma_special_function",
+      "ko": "로그감마특수함수"
+    },
+    "link": {
+      "en": "create_hard_link",
+      "ko": "하드링크파일연결"
+    },
+    "listen": {
+      "en": "listen_for_clients",
+      "ko": "접속대기"
+    },
+    "localtime": {
+      "en": "time_to_local_parts",
+      "ko": "지역시각분해"
+    },
+    "log": {
+      "en": "natural_logarithm",
+      "ko": "자연로그"
+    },
+    "log10": {
+      "en": "common_logarithm",
+      "ko": "상용로그"
+    },
+    "log2": {
+      "en": "base_two_logarithm_value",
+      "ko": "이밑로그값계산"
+    },
+    "long": {
+      "en": "long_number",
+      "ko": "긴정수"
+    },
+    "LONG_MAX": {
+      "en": "long_number_max",
+      "ko": "긴정수최대"
+    },
+    "LONG_MIN": {
+      "en": "long_number_min",
+      "ko": "긴정수최소"
+    },
+    "lrint": {
+      "en": "round_float_to_long_int",
+      "ko": "실수반올림긴정수변환"
+    },
+    "lseek": {
+      "en": "seek_descriptor_offset",
+      "ko": "기술자위치이동"
+    },
+    "lstat": {
+      "en": "inspect_link_without_follow",
+      "ko": "심볼릭링크자체상태조회"
+    },
+    "main": {
+      "en": "primary_program_entry_point",
+      "ko": "주실행진입점"
+    },
+    "MATH_ERREXCEPT": {
+      "en": "math_ops_failure_error_caught_fault",
+      "ko": "수학오류예외"
+    },
+    "MATH_ERRNO": {
+      "en": "math_ops_errno",
+      "ko": "수학오류번호"
+    },
+    "memchr": {
+      "en": "scan_memory_for_byte",
+      "ko": "메모리영역바이트탐색"
+    },
+    "memcmp": {
+      "en": "compare_bytes",
+      "ko": "바이트비교"
+    },
+    "memcpy": {
+      "en": "copy_non_overlapping_memory",
+      "ko": "비중첩메모리영역복사"
+    },
+    "memmove": {
+      "en": "move_overlapping_bytes",
+      "ko": "겹친바이트이동"
+    },
+    "memset": {
+      "en": "fill_bytes",
+      "ko": "바이트채우기"
+    },
+    "mkdir": {
+      "en": "make_directory",
+      "ko": "폴더만들기"
+    },
+    "mktime": {
+      "en": "parts_to_time",
+      "ko": "분해시각합치기"
+    },
+    "mmap": {
+      "en": "map_memory",
+      "ko": "메모리사상"
+    },
+    "modf": {
+      "en": "split_fractional_integer_parts",
+      "ko": "소수부와정수부분리"
+    },
+    "munmap": {
+      "en": "unmap_memory",
+      "ko": "메모리사상해제"
+    },
+    "NAN": {
+      "en": "not_a_numeric_value_as_uppercase_constant_flag",
+      "ko": "숫자아님특수값대문자고정상수"
+    },
+    "nan": {
+      "en": "not_a_numeric_value",
+      "ko": "숫자아님특수값"
+    },
+    "nanosleep": {
+      "en": "sleep_for_nanosecond_duration",
+      "ko": "나노초단위정밀대기"
+    },
+    "nextafter": {
+      "en": "next_representable_float_after",
+      "ko": "대상방향다음부동소수값"
+    },
+    "nexttoward": {
+      "en": "next_float_toward_long_double",
+      "ko": "목표방향정밀부동소수값"
+    },
+    "Noreturn": {
+      "en": "never_returns_type_hint",
+      "ko": "복귀안함자료형힌트"
+    },
+    "ntohl": {
+      "en": "network_to_host_byte_long",
+      "ko": "네트워크정수호스트변환"
+    },
+    "ntohs": {
+      "en": "net_to_host_short",
+      "ko": "네트워크짧은정수호스트변환"
+    },
+    "NULL": {
+      "en": "empty_value_const",
+      "ko": "빈값"
+    },
+    "nullptr": {
+      "en": "type_safe_null_pointer_literal",
+      "ko": "안전한빈포인터상수"
+    },
+    "offsetof": {
+      "en": "byte_offset_of_struct_member",
+      "ko": "구조체멤버바이트오프셋"
+    },
+    "open": {
+      "en": "open_file",
+      "ko": "파일열기",
+      "synonyms_ko": [
+        "열기",
+        "문서열기",
+        "불러오기"
+      ],
+      "synonyms_en": [
+        "access_file",
+        "load_handle"
+      ],
+      "grammar_ko": "[파일이름] 파일열기",
+      "grammar_ex_ko": "기록 파일열기",
+      "grammar_en": "open_file [filename]",
+      "grammar_ex_en": "open_file data.txt",
+      "role_ko": "파일을 읽거나 쓰기 위해 열기",
+      "role_en": "Open file handle"
+    },
+    "opendir": {
+      "en": "open_directory_stream",
+      "ko": "폴더스트림열기"
+    },
+    "optarg": {
+      "en": "current_cli_option_argument",
+      "ko": "현재명령행옵션인자값"
+    },
+    "opterr": {
+      "en": "toggle_cli_option_error_print",
+      "ko": "명령행옵션오류출력제어"
+    },
+    "optind": {
+      "en": "next_cli_argv_scan_index",
+      "ko": "다음명령행인자탐색위치"
+    },
+    "optopt": {
+      "en": "last_unknown_cli_option_char",
+      "ko": "알수없는마지막옵션문자"
+    },
+    "pause": {
+      "en": "temporarily_suspend_playback",
+      "ko": "동작일시정지"
+    },
+    "perror": {
+      "en": "print_errno_message",
+      "ko": "오류번호메시지출력"
+    },
+    "pipe": {
+      "en": "create_pipe_pair",
+      "ko": "파이프쌍만들기"
+    },
+    "poll": {
+      "en": "poll_descriptor_events",
+      "ko": "기술자사건폴링"
+    },
+    "pow": {
+      "en": "power_function",
+      "ko": "거듭제곱함수"
+    },
+    "printf": {
+      "en": "format_print",
+      "ko": "서식출력",
+      "synonyms_ko": [
+        "양식출력",
+        "씨출력",
+        "형식맞춤출력"
+      ],
+      "synonyms_en": [
+        "c_printf",
+        "formatted_output"
+      ],
+      "grammar_ko": "[서식글, 값] 서식출력",
+      "grammar_ex_ko": "점수 서식출력",
+      "grammar_en": "format_print [format], [value]",
+      "grammar_ex_en": "format_print score",
+      "role_ko": "C 언어 서식 지정 화면 출력",
+      "role_en": "C formatted printf output"
+    },
+    "pthread_attr_destroy": {
+      "en": "posix_thread_release_attrs",
+      "ko": "포직스스레드속성해제"
+    },
+    "pthread_attr_getdetachstate": {
+      "en": "posix_thread_get_detach_mode",
+      "ko": "포직스스레드분리상태조회"
+    },
+    "pthread_attr_init": {
+      "en": "posix_thread_init_attrs",
+      "ko": "포직스스레드속성초기화"
+    },
+    "pthread_attr_setdetachstate": {
+      "en": "posix_thread_set_detach_mode",
+      "ko": "포직스스레드분리상태설정"
+    },
+    "pthread_cond_broadcast": {
+      "en": "posix_thread_wake_all_waiters",
+      "ko": "포직스스레드조건전체깨움"
+    },
+    "pthread_cond_destroy": {
+      "en": "posix_thread_release_condition",
+      "ko": "포직스스레드조건변수해제"
+    },
+    "pthread_cond_init": {
+      "en": "posix_thread_init_condition",
+      "ko": "포직스스레드조건변수초기화"
+    },
+    "pthread_cond_signal": {
+      "en": "posix_thread_wake_one_waiter",
+      "ko": "포직스스레드조건하나깨움"
+    },
+    "pthread_cond_wait": {
+      "en": "pthread_cond_wait_pause",
+      "ko": "포직스스레드조건변수기다림"
+    },
+    "pthread_create": {
+      "en": "posix_thread_spawn_new_worker",
+      "ko": "포직스스레드새작업생성"
+    },
+    "pthread_detach": {
+      "en": "posix_thread_mark_detached",
+      "ko": "포직스스레드독립분리설정"
+    },
+    "pthread_equal": {
+      "en": "posix_thread_compare_ids_equal",
+      "ko": "포직스스레드식별일치검사"
+    },
+    "pthread_exit": {
+      "en": "posix_thread_terminate_current",
+      "ko": "포직스스레드현재실행종료"
+    },
+    "pthread_join": {
+      "en": "join_posix_thread",
+      "ko": "스레드합류"
+    },
+    "pthread_key_create": {
+      "en": "pthread_lookup_key_create_item",
+      "ko": "포직스스레드키생성"
+    },
+    "pthread_key_delete": {
+      "en": "pthread_lookup_key_delete_item",
+      "ko": "포직스스레드키삭제"
+    },
+    "pthread_mutex_destroy": {
+      "en": "posix_thread_release_mutex",
+      "ko": "포직스스레드상호배제해제"
+    },
+    "pthread_mutex_init": {
+      "en": "init_mutex",
+      "ko": "상호배제초기화"
+    },
+    "pthread_mutex_lock": {
+      "en": "lock_mutex",
+      "ko": "상호배제잠금"
+    },
+    "pthread_mutex_trylock": {
+      "en": "posix_thread_nonblock_mutex_lock",
+      "ko": "포직스스레드상호배제잠금시도"
+    },
+    "pthread_mutex_unlock": {
+      "en": "unlock_mutex",
+      "ko": "상호배제잠금해제"
+    },
+    "pthread_once": {
+      "en": "posix_thread_run_init_once",
+      "ko": "포직스스레드단한번만실행"
+    },
+    "pthread_rwlock_destroy": {
+      "en": "posix_thread_release_rw_lock",
+      "ko": "포직스스레드읽기쓰기잠금해제"
+    },
+    "pthread_rwlock_init": {
+      "en": "posix_thread_init_rw_lock",
+      "ko": "포직스스레드읽기쓰기잠금초기화"
+    },
+    "pthread_rwlock_rdlock": {
+      "en": "posix_thread_acquire_read_lock",
+      "ko": "포직스스레드공유읽기잠금"
+    },
+    "pthread_rwlock_unlock": {
+      "en": "pthread_rwlock_drop_lock",
+      "ko": "스레드읽기쓰기잠금해제"
+    },
+    "pthread_rwlock_wrlock": {
+      "en": "pthread_rwlock_write_end_lock",
+      "ko": "포직스스레드읽기쓰기잠금쓰기끝잠금"
+    },
+    "pthread_self": {
+      "en": "pthread_current_instance",
+      "ko": "포직스스레드자신"
+    },
+    "PTRDIFF_MAX": {
+      "en": "memory_ptr_difference_upper_limit",
+      "ko": "메모리포인터차이비교최댓값"
+    },
+    "PTRDIFF_MIN": {
+      "en": "memory_ptr_difference_lower_limit",
+      "ko": "메모리포인터차이비교최솟값"
+    },
+    "putc": {
+      "en": "write_char_to_stream",
+      "ko": "스트림에문자쓰기"
+    },
+    "putchar": {
+      "en": "write_one_char",
+      "ko": "문자하나쓰기"
+    },
+    "putenv": {
+      "en": "insert_or_change_env_string",
+      "ko": "환경변수문자열등록변경"
+    },
+    "puts": {
+      "en": "write_line_chars",
+      "ko": "문자한줄쓰기"
+    },
+    "qsort": {
+      "en": "quick_sort_array",
+      "ko": "배열빠른정렬"
+    },
+    "quick_exit": {
+      "en": "fast_compact_quit_program",
+      "ko": "빠른간편종료빠져나감"
+    },
+    "raise": {
+      "en": "raise_signal",
+      "ko": "신호일으키기"
+    },
+    "rand": {
+      "en": "pseudo_random_int",
+      "ko": "의사난수정수"
+    },
+    "RAND_MAX": {
+      "en": "random_value_max",
+      "ko": "난수최대"
+    },
+    "read": {
+      "en": "read_content",
+      "ko": "내용읽기",
+      "synonyms_ko": [
+        "파일읽기",
+        "전부읽기",
+        "읽어오기"
+      ],
+      "synonyms_en": [
+        "get_file_text",
+        "fetch_lines"
+      ],
+      "grammar_ko": "[파일] 내용읽기",
+      "grammar_ex_ko": "일기 내용읽기",
+      "grammar_en": "read_content [file]",
+      "grammar_ex_en": "read_content file",
+      "role_ko": "파일 내용 읽어오기",
+      "role_en": "Read text contents from file"
+    },
+    "readdir": {
+      "en": "read_directory_entry",
+      "ko": "폴더항목읽기"
+    },
+    "readlink": {
+      "en": "read_symbolic_link",
+      "ko": "심볼릭링크대상읽기"
+    },
+    "realloc": {
+      "en": "resize_allocation",
+      "ko": "할당크기바꾸기"
+    },
+    "recv": {
+      "en": "receive_socket_bytes",
+      "ko": "소켓바이트받기"
+    },
+    "recvfrom": {
+      "en": "receive_datagram_and_sender_addr",
+      "ko": "데이터그램과송신주소수신"
+    },
+    "recvmsg": {
+      "en": "receive_structured_socket_msg",
+      "ko": "구조화소켓메시지수신"
+    },
+    "register": {
+      "en": "store_handler_in_registry",
+      "ko": "목록에등록"
+    },
+    "remainder": {
+      "en": "ieee_or_integer_leftover",
+      "ko": "나눗셈나머지값"
+    },
+    "remove": {
+      "en": "remove_item",
+      "ko": "지우기",
+      "synonyms_ko": [
+        "찾아지우기",
+        "항목삭제",
+        "빼버리기"
+      ],
+      "synonyms_en": [
+        "erase_match",
+        "drop_item"
+      ],
+      "grammar_ko": "[목록]에서 [값] 지우기",
+      "grammar_ex_ko": "장바구니에서 사과 지우기",
+      "grammar_en": "[list] remove_item [val]",
+      "grammar_ex_en": "cart remove_item apple",
+      "role_ko": "같은 값 찾아서 지우기",
+      "role_en": "Remove matching item"
+    },
+    "rename": {
+      "en": "rename_path",
+      "ko": "경로이름바꾸기"
+    },
+    "restrict": {
+      "en": "no_pointer_aliasing_qualifier",
+      "ko": "포인터별칭없음한정자"
+    },
+    "return": {
+      "en": "return_result",
+      "ko": "반환",
+      "synonyms_ko": [
+        "돌려주기",
+        "결과돌려주기",
+        "값내보내기",
+        "리턴"
+      ],
+      "synonyms_en": [
+        "give_back",
+        "send_result",
+        "hand_back"
+      ],
+      "grammar_ko": "[보낼값] 반환  (예: 80 반환 / 합계 반환 / 80 참 반환)",
+      "grammar_ex_ko": "점수 반환",
+      "grammar_en": "return_result [value]",
+      "grammar_ex_en": "return_result score",
+      "role_ko": "함수 결과값 돌려주기",
+      "role_en": "Return result from function"
+    },
+    "rewind": {
+      "en": "rewind_stream_start",
+      "ko": "스트림처음으로"
+    },
+    "rewinddir": {
+      "en": "rewind_directory_stream",
+      "ko": "폴더스트림처음으로"
+    },
+    "rmdir": {
+      "en": "remove_directory",
+      "ko": "폴더삭제"
+    },
+    "round": {
+      "en": "round_num",
+      "ko": "반올림",
+      "synonyms_ko": [
+        "가까운수맞추기",
+        "소수반올림"
+      ],
+      "synonyms_en": [
+        "nearest_number",
+        "round_decimal"
+      ],
+      "grammar_ko": "[숫자] 반올림",
+      "grammar_ex_ko": "평균 반올림",
+      "grammar_en": "round_num [number]",
+      "grammar_ex_en": "round_num avg",
+      "role_ko": "소수점 반올림",
+      "role_en": "Round decimal number"
+    },
+    "scanf": {
+      "en": "scan_formatted_stdin",
+      "ko": "표준입력서식읽기"
+    },
+    "SEEK_CUR": {
+      "en": "seek_from_current_offset",
+      "ko": "현재위치기준탐색"
+    },
+    "SEEK_END": {
+      "en": "seek_end_point",
+      "ko": "탐색위치끝"
+    },
+    "SEEK_SET": {
+      "en": "seek_assign_value",
+      "ko": "탐색위치채움"
+    },
+    "seekdir": {
+      "en": "jump_directory_stream_position",
+      "ko": "디렉터리읽기위치이동"
+    },
+    "select": {
+      "en": "wait_descriptor_ready",
+      "ko": "기술자준비대기"
+    },
+    "sem_close": {
+      "en": "sem_close_resource",
+      "ko": "세마포닫기"
+    },
+    "sem_destroy": {
+      "en": "destroy_unnamed_semaphore",
+      "ko": "이름없는세마포어해제"
+    },
+    "sem_getvalue": {
+      "en": "read_current_semaphore_count",
+      "ko": "세마포어현재카운트조회"
+    },
+    "sem_init": {
+      "en": "initialize_unnamed_semaphore",
+      "ko": "이름없는세마포어초기화"
+    },
+    "sem_open": {
+      "en": "sem_open_resource",
+      "ko": "세마포열기"
+    },
+    "sem_post": {
+      "en": "post_semaphore",
+      "ko": "세마포올리기"
+    },
+    "sem_trywait": {
+      "en": "non_blocking_semaphore_acquire",
+      "ko": "비차단세마포어획득시도"
+    },
+    "sem_unlink": {
+      "en": "semaphore_delete_file_link",
+      "ko": "세마포어신호기파일경로연결삭제"
+    },
+    "sem_wait": {
+      "en": "wait_semaphore",
+      "ko": "세마포기다리기"
+    },
+    "send": {
+      "en": "send_socket_bytes",
+      "ko": "소켓바이트보내기"
+    },
+    "sendmsg": {
+      "en": "send_structured_socket_message",
+      "ko": "구조화소켓메시지송신"
+    },
+    "sendto": {
+      "en": "send_datagram_to_target_addr",
+      "ko": "대상주소로데이터그램송신"
+    },
+    "setbuf": {
+      "en": "assign_stream_io_buffer",
+      "ko": "입출력스트림버퍼설정"
+    },
+    "setenv": {
+      "en": "assign_value_exec_environment",
+      "ko": "설정환경"
+    },
+    "sethostname": {
+      "en": "update_local_machine_hostname",
+      "ko": "로컬호스트이름설정"
+    },
+    "setsockopt": {
+      "en": "configure_socket_option_value",
+      "ko": "소켓동작옵션값설정"
+    },
+    "setuid": {
+      "en": "change_effective_user_id",
+      "ko": "현재실행사용자번호변경"
+    },
+    "short": {
+      "en": "short_number",
+      "ko": "짧은정수"
+    },
+    "shutdown": {
+      "en": "shutdown_socket_side",
+      "ko": "소켓한쪽종료"
+    },
+    "sigaction": {
+      "en": "configure_posix_signal_handler",
+      "ko": "포직스신호처리기상세설정"
+    },
+    "sigaddset": {
+      "en": "add_signal_to_signal_mask",
+      "ko": "신호집합에신호추가"
+    },
+    "sigdelset": {
+      "en": "remove_signal_from_mask",
+      "ko": "신호집합에서신호제거"
+    },
+    "sigemptyset": {
+      "en": "initialize_empty_signal_set",
+      "ko": "신호집합비우기초기화"
+    },
+    "sigfillset": {
+      "en": "fill_all_signals_in_set",
+      "ko": "모든신호포함집합초기화"
+    },
+    "sigismember": {
+      "en": "check_signal_in_signal_set",
+      "ko": "신호집합포함여부검사"
+    },
+    "signal": {
+      "en": "install_signal_handler",
+      "ko": "신호처리설치"
+    },
+    "signbit": {
+      "en": "check_negative_float_sign_bit",
+      "ko": "실수음수부호비트검사"
+    },
+    "signed": {
+      "en": "integer_type_with_plus_minus",
+      "ko": "부호있는정수형"
+    },
+    "sigpending": {
+      "en": "query_blocked_pending_signals",
+      "ko": "대기중보류신호집합조회"
+    },
+    "sigprocmask": {
+      "en": "inspect_or_change_blocked_signals",
+      "ko": "차단신호마스크조회변경"
+    },
+    "sigsuspend": {
+      "en": "replace_mask_and_wait_signal",
+      "ko": "신호마스크교체후대기"
+    },
+    "sin": {
+      "en": "sine_function",
+      "ko": "사인함수"
+    },
+    "sinh": {
+      "en": "hyperbolic_sine",
+      "ko": "쌍곡사인"
+    },
+    "SIZE_MAX": {
+      "en": "item_size_max",
+      "ko": "크기최대"
+    },
+    "sizeof": {
+      "en": "compile_time_byte_size_query",
+      "ko": "메모리바이트크기연산자"
+    },
+    "sleep": {
+      "en": "sleep_whole_seconds",
+      "ko": "초단위쉬기"
+    },
+    "snprintf": {
+      "en": "bounded_format_to_buffer",
+      "ko": "길이제한서식쓰기"
+    },
+    "socket": {
+      "en": "create_socket",
+      "ko": "소켓만들기"
+    },
+    "socketpair": {
+      "en": "create_connected_socket_pair",
+      "ko": "연결된익명소켓쌍생성"
+    },
+    "sprintf": {
+      "en": "format_to_buffer",
+      "ko": "버퍼에서식쓰기"
+    },
+    "sqrt": {
+      "en": "square_root",
+      "ko": "제곱근"
+    },
+    "srand": {
+      "en": "seed_random_generator",
+      "ko": "난수씨뿌리기"
+    },
+    "sscanf": {
+      "en": "scan_from_buffer",
+      "ko": "버퍼에서서식읽기"
+    },
+    "stat": {
+      "en": "query_path_status",
+      "ko": "경로상태조회"
+    },
+    "static": {
+      "en": "static_member",
+      "ko": "정적"
+    },
+    "Static_assert": {
+      "en": "static_member_assert_true",
+      "ko": "정적단언"
+    },
+    "stderr": {
+      "en": "standard_error_output_stream",
+      "ko": "표준오류출력스트림"
+    },
+    "stdin": {
+      "en": "standard_input_stream",
+      "ko": "표준콘솔입력스트림"
+    },
+    "stdout": {
+      "en": "standard_console_output_pipe",
+      "ko": "표준콘솔출력스트림"
+    },
+    "strcasecmp": {
+      "en": "compare_strings_ignoring_case",
+      "ko": "대소문자무시문자열비교"
+    },
+    "strcat": {
+      "en": "append_chars",
+      "ko": "문자이어붙이기"
+    },
+    "strchr": {
+      "en": "find_char_forward",
+      "ko": "문자앞에서찾기"
+    },
+    "strcmp": {
+      "en": "compare_chars",
+      "ko": "문자비교"
+    },
+    "strcoll": {
+      "en": "locale_aware_string_compare",
+      "ko": "로캘기준문자열정렬비교"
+    },
+    "strcpy": {
+      "en": "copy_null_terminated_string",
+      "ko": "널종결문자열전체복사"
+    },
+    "strdup": {
+      "en": "allocate_duplicate_heap_string",
+      "ko": "힙복제문자열새로생성"
+    },
+    "strerror": {
+      "en": "errno_to_text",
+      "ko": "오류번호설명문자열조회"
+    },
+    "strftime": {
+      "en": "format_broken_time",
+      "ko": "분해시각서식"
+    },
+    "strlen": {
+      "en": "count_bytes_before_null_char",
+      "ko": "문자열바이트길이계산"
+    },
+    "strncat": {
+      "en": "append_bounded_chars",
+      "ko": "길이제한이어붙이기"
+    },
+    "strncmp": {
+      "en": "compare_bounded_chars",
+      "ko": "길이제한문자비교"
+    },
+    "strncpy": {
+      "en": "copy_bounded_chars",
+      "ko": "길이제한문자복사"
+    },
+    "strndup": {
+      "en": "allocate_bounded_duplicate_str",
+      "ko": "길이제한힙복제문자열"
+    },
+    "strrchr": {
+      "en": "find_char_backward",
+      "ko": "문자뒤에서찾기"
+    },
+    "strstr": {
+      "en": "find_substring",
+      "ko": "부분문자열찾기"
+    },
+    "strtod": {
+      "en": "string_to_double",
+      "ko": "문자열배정밀실수변환씨"
+    },
+    "strtof": {
+      "en": "parse_string_to_single_float",
+      "ko": "문자열단정밀실수해석"
+    },
+    "strtoimax": {
+      "en": "parse_string_to_max_signed_int",
+      "ko": "문자열최대부호정수해석"
+    },
+    "strtok": {
+      "en": "tokenize_chars",
+      "ko": "문자토큰나누기"
+    },
+    "strtol": {
+      "en": "string_to_long",
+      "ko": "문자열긴정수변환씨"
+    },
+    "strtold": {
+      "en": "parse_string_to_long_double",
+      "ko": "문자열확장정밀실수해석"
+    },
+    "strtoul": {
+      "en": "parse_string_to_unsigned_long",
+      "ko": "문자열부호없는긴정수해석"
+    },
+    "struct": {
+      "en": "packed_binary_record_layout",
+      "ko": "구조체이진배치"
+    },
+    "strxfrm": {
+      "en": "transform_string_for_locale_sort",
+      "ko": "로캘정렬용문자열변환"
+    },
+    "switch": {
+      "en": "switch_case",
+      "ko": "경우분기",
+      "synonyms_ko": [
+        "선택분기",
+        "갈래나누기",
+        "스위치문"
+      ],
+      "synonyms_en": [
+        "branch_choice",
+        "dispatch_value"
+      ],
+      "grammar_ko": "경우분기 [값]에 따라 갈래 실행",
+      "grammar_ex_ko": "경우분기 등급",
+      "grammar_en": "switch_case [value]",
+      "grammar_ex_en": "switch_case grade",
+      "role_ko": "값에 따라 여러 갈래 선택",
+      "role_en": "Multi-way value switch"
+    },
+    "symlink": {
+      "en": "create_symbolic_link",
+      "ko": "심볼릭링크생성"
+    },
+    "system": {
+      "en": "operating_system_runtime",
+      "ko": "시스템운영"
+    },
+    "tan": {
+      "en": "tangent_function",
+      "ko": "탄젠트함수"
+    },
+    "tanh": {
+      "en": "hyperbolic_tangent",
+      "ko": "쌍곡탄젠트"
+    },
+    "Thread_local": {
+      "en": "worker_thread_local_scope",
+      "ko": "동시실행스레드지역내부범위"
+    },
+    "time": {
+      "en": "calendar_time_now",
+      "ko": "지금달력시각"
+    },
+    "timespec": {
+      "en": "seconds_and_nanoseconds_struct",
+      "ko": "초와나노초시각구조체"
+    },
+    "timespec_get": {
+      "en": "time_unit_spec_fetch_read",
+      "ko": "시각정밀도단위규격조회"
+    },
+    "tmpfile": {
+      "en": "open_temp_file",
+      "ko": "임시파일열기"
+    },
+    "tolower": {
+      "en": "to_lower_char",
+      "ko": "소문자로"
+    },
+    "toupper": {
+      "en": "to_upper_char",
+      "ko": "대문자로"
+    },
+    "true": {
+      "en": "bool_true",
+      "ko": "참",
+      "synonyms_ko": [
+        "맞음",
+        "트루",
+        "진실값"
+      ],
+      "synonyms_en": [
+        "yes_true",
+        "correct_flag"
+      ],
+      "grammar_ko": "참  (조건이나 상태 값에 사용)",
+      "grammar_ex_ko": "합격에 참 넣기",
+      "grammar_en": "bool_true",
+      "grammar_ex_en": "passed = bool_true",
+      "role_ko": "논리 참(맞다) 값",
+      "role_en": "Boolean true value"
+    },
+    "trunc": {
+      "en": "cut_fractional_decimals_off",
+      "ko": "소수점버림"
+    },
+    "truncate": {
+      "en": "shorten_file",
+      "ko": "파일줄이기"
+    },
+    "typedef": {
+      "en": "declare_existing_type_alias",
+      "ko": "자료형별칭이름선언"
+    },
+    "typeof": {
+      "en": "infer_type_of_expression",
+      "ko": "표현식자료형추론"
+    },
+    "typeof_unqual": {
+      "en": "infer_unqualified_expr_type",
+      "ko": "한정자제거자료형추론"
+    },
+    "UINT_MAX": {
+      "en": "unsigned_integer_upper_limit",
+      "ko": "부호없는정수최댓값"
+    },
+    "ULLONG_MAX": {
+      "en": "unsigned_long_upper_limit_as_uppercase_constant_flag",
+      "ko": "부호없는큰정수최댓값"
+    },
+    "ULONG_MAX": {
+      "en": "unsigned_long_upper_limit",
+      "ko": "부호없는긴정수최댓값"
+    },
+    "umask": {
+      "en": "set_process_file_creation_mask",
+      "ko": "파일생성권한마스크설정"
+    },
+    "uname": {
+      "en": "query_operating_system_info",
+      "ko": "운영체제커널정보조회"
+    },
+    "ungetc": {
+      "en": "push_char_back",
+      "ko": "문자다시넣기"
+    },
+    "union": {
+      "en": "either_type_or_set_merge",
+      "ko": "합집합공용형"
+    },
+    "unlink": {
+      "en": "unlink_directory_entry",
+      "ko": "디렉터리항목삭제"
+    },
+    "unsetenv": {
+      "en": "remove_environment_variable",
+      "ko": "환경변수항목제거"
+    },
+    "unsigned": {
+      "en": "integer_without_minus_sign",
+      "ko": "부호없는양수"
+    },
+    "usleep": {
+      "en": "sleep_microseconds",
+      "ko": "마이크로초쉬기"
+    },
+    "void": {
+      "en": "no_return_binding",
+      "ko": "반환없음묶음"
+    },
+    "volatile": {
+      "en": "prevent_compiler_caching",
+      "ko": "메모리직접읽기"
+    },
+    "wait": {
+      "en": "wait_for_child",
+      "ko": "자식기다리기"
+    },
+    "waitid": {
+      "en": "wait_for_child_process_state",
+      "ko": "지정자식프로세스상태대기"
+    },
+    "waitpid": {
+      "en": "wait_for_specific_child_pid",
+      "ko": "특정자식프로세스종료대기"
+    },
+    "WCHAR_MAX": {
+      "en": "wide_char_upper_limit",
+      "ko": "넓은유니코드문자최댓값"
+    },
+    "WCHAR_MIN": {
+      "en": "wide_char_lower_limit",
+      "ko": "넓은유니코드문자최솟값"
+    },
+    "while": {
+      "en": "while_loop",
+      "ko": "동안",
+      "synonyms_ko": [
+        "동안반복",
+        "계속반복",
+        "조건반복",
+        "하는동안",
+        "와일문"
+      ],
+      "synonyms_en": [
+        "keep_looping",
+        "as_long_as",
+        "until_stop"
+      ],
+      "grammar_ko": "[조건] 동안 반복 [할일]",
+      "grammar_ex_ko": "점수 10 미만 동안",
+      "grammar_en": "while_loop [condition]",
+      "grammar_ex_en": "while_loop score < 10",
+      "role_ko": "조건이 참인 동안 계속 반복",
+      "role_en": "While condition remains true loop"
+    },
+    "write": {
+      "en": "write_file",
+      "ko": "파일저장",
+      "synonyms_ko": [
+        "파일쓰기",
+        "내용쓰기",
+        "기록남기기",
+        "저장소쓰기"
+      ],
+      "synonyms_en": [
+        "save_text_file",
+        "store_to_file",
+        "record_file"
+      ],
+      "grammar_ko": "[대상] 파일저장",
+      "grammar_ex_ko": "점수목록 파일저장",
+      "grammar_en": "write_file [content]",
+      "grammar_ex_en": "write_file scores",
+      "role_ko": "파일에 글자 기록하기",
+      "role_en": "Write content into file"
+    }
+  }
+}

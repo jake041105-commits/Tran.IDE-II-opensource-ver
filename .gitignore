@@ -1,0 +1,32 @@
+# Python / Virtual Environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Build & Release Artifacts
+build/
+dist/
+runtimes/
+*.exe
+*.msi
+*.zip
+
+# Local User State & Personal Learned Mappings
+dicts/user_learned.json
+workspace_session.json
+webview_data/
+packaged.marker
+
+# IDE / Logs / OS Junk
+.cursor/
+.vscode/
+.idea/
+scratch/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+desktop.ini

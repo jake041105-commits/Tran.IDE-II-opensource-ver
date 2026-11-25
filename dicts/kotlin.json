@@ -1,0 +1,3318 @@
+{
+  "_meta": {
+    "language": "kotlin",
+    "version": "0.3.0",
+    "description": "Disjoint 1:N natural canonical + synonym mappings (v0.3)",
+    "entry_count": 650
+  },
+  "entries": {
+    "absolutePath": {
+      "en": "full_unbounded_file_route_ko",
+      "ko": "전체경로문자"
+    },
+    "abstract": {
+      "en": "abstract_member",
+      "ko": "추상멤버"
+    },
+    "actor": {
+      "en": "state_isolating_worker",
+      "ko": "격리액터"
+    },
+    "actual": {
+      "en": "platform_actual",
+      "ko": "플랫폼실제"
+    },
+    "add": {
+      "en": "add_element",
+      "ko": "더해넣기",
+      "synonyms_ko": [
+        "모음넣기",
+        "새항목추가",
+        "주머니넣기"
+      ],
+      "synonyms_en": [
+        "insert_into_set",
+        "collection_add"
+      ],
+      "grammar_ko": "[상자]에 [값] 더해넣기",
+      "grammar_ex_ko": "방문자에 민수 더해넣기",
+      "grammar_en": "[box] add_element [value]",
+      "grammar_ex_en": "visitors add_element Alex",
+      "role_ko": "집합·목록에 항목 더하기 (Java/Kotlin/Set)",
+      "role_en": "Add element into collection or set"
+    },
+    "addAll": {
+      "en": "insert_every_collection_item",
+      "ko": "전체항목일괄추가"
+    },
+    "addCallAdapterFactory": {
+      "en": "insert_item_invoke_fn_interface_bridge_creator_factory",
+      "ko": "호출어댑터공장추가"
+    },
+    "addConverterFactory": {
+      "en": "insert_item_format_mapper_creator_factory",
+      "ko": "항목추가데이터형변환기생성공장"
+    },
+    "addHeader": {
+      "en": "insert_item_top_header",
+      "ko": "항목추가상단머리글영역"
+    },
+    "align": {
+      "en": "align_children_along_axis",
+      "ko": "위치정렬"
+    },
+    "Alignment": {
+      "en": "child_alignment",
+      "ko": "자식정렬"
+    },
+    "all": {
+      "en": "all_match",
+      "ko": "모두맞음"
+    },
+    "allowMainThreadQueries": {
+      "en": "permit_entry_main_worker_thread_search_query_list",
+      "ko": "메인스레드질의허용"
+    },
+    "also": {
+      "en": "also_scoped_side_effect",
+      "ko": "또한부수효과"
+    },
+    "androidContext": {
+      "en": "android_platform_scope_context",
+      "ko": "안드로이드운영체제실행공유문맥"
+    },
+    "annotation": {
+      "en": "attached_type_or_note_tag",
+      "ko": "주석표식메타"
+    },
+    "Any": {
+      "en": "matches_at_least_one_item_cls",
+      "ko": "아무값유형"
+    },
+    "any": {
+      "en": "any_matches",
+      "ko": "하나라도"
+    },
+    "appendText": {
+      "en": "attach_to_end_written_text",
+      "ko": "끝에덧붙이기텍스트"
+    },
+    "apply": {
+      "en": "apply_scoped_configure",
+      "ko": "적용해설정"
+    },
+    "ArithmeticException": {
+      "en": "math_ops_caught_fault",
+      "ko": "사칙산술연산예외"
+    },
+    "Arrangement": {
+      "en": "child_arrangement",
+      "ko": "자식배치"
+    },
+    "Array": {
+      "en": "value_array",
+      "ko": "배열",
+      "synonyms_ko": [
+        "줄배열",
+        "어레이",
+        "칸상자"
+      ],
+      "synonyms_en": [
+        "js_array",
+        "fixed_slots"
+      ],
+      "grammar_ko": "배열 [항목들]",
+      "grammar_ex_ko": "점수들 배열",
+      "grammar_en": "value_array [items]",
+      "grammar_ex_en": "value_array scores",
+      "role_ko": "배열 목록 상자 (JS/Kotlin/Swift)",
+      "role_en": "Array container class"
+    },
+    "ArrayList": {
+      "en": "indexed_list_ordered_list",
+      "ko": "배열목록"
+    },
+    "arrayListOf": {
+      "en": "indexed_list_ordered_list_belonging_to",
+      "ko": "배열목록코틀린"
+    },
+    "arrayOf": {
+      "en": "indexed_list_belonging_to",
+      "ko": "배열만들기"
+    },
+    "arrayOfNulls": {
+      "en": "indexed_list_belonging_to_empty_null_list",
+      "ko": "배열값없음빈참조들"
+    },
+    "as": {
+      "en": "type_cast_as",
+      "ko": "형변환"
+    },
+    "asFlow": {
+      "en": "viewed_as_async_stream",
+      "ko": "로서취급비동기데이터흐름"
+    },
+    "asReversed": {
+      "en": "viewed_as_invert_order",
+      "ko": "로서취급순서거꾸로뒤집기됨"
+    },
+    "asSequence": {
+      "en": "view_as_sequence",
+      "ko": "지연열로보기"
+    },
+    "associate": {
+      "en": "associate_pairs",
+      "ko": "짝으로대응"
+    },
+    "associateBy": {
+      "en": "link_together_ordered_by",
+      "ko": "연관관계연결별"
+    },
+    "associateWith": {
+      "en": "link_together_using_context",
+      "ko": "연관관계연결포함"
+    },
+    "asStateFlow": {
+      "en": "viewed_as_held_state_async_stream",
+      "ko": "로서취급상태비동기데이터흐름"
+    },
+    "async": {
+      "en": "async_mode",
+      "ko": "기다림없이",
+      "synonyms_ko": [
+        "비동기작업",
+        "백그라운드함수"
+      ],
+      "synonyms_en": [
+        "background_task",
+        "non_blocking_fn"
+      ],
+      "grammar_ko": "기다림없이 함수선언 [이름]",
+      "grammar_ex_ko": "기다림없이 함수선언 불러오기",
+      "grammar_en": "async_mode declare_function [name]",
+      "grammar_ex_en": "async_mode declare_function fetch_data",
+      "role_ko": "기다리는 동안 멈추지 않는 비동기 표시",
+      "role_en": "Async non-blocking modifier"
+    },
+    "AsyncImage": {
+      "en": "async_loaded_image",
+      "ko": "비동기그림"
+    },
+    "average": {
+      "en": "computed_numeric_mean",
+      "ko": "평균값"
+    },
+    "await": {
+      "en": "wait_ready",
+      "ko": "도착기다리기",
+      "synonyms_ko": [
+        "완료기다림",
+        "결과대기"
+      ],
+      "synonyms_en": [
+        "await_answer",
+        "pause_for_result"
+      ],
+      "grammar_ko": "도착기다리기 [비동기작업]",
+      "grammar_ex_ko": "도착기다리기 주소요청",
+      "grammar_en": "wait_ready [promise]",
+      "grammar_ex_en": "wait_ready fetch_web",
+      "role_ko": "비동기 작업 끝날 때까지 잠깐 기다림",
+      "role_en": "Await asynchronous result"
+    },
+    "background": {
+      "en": "paint_background",
+      "ko": "배경칠하기"
+    },
+    "baseUrl": {
+      "en": "foundation_base_web_url",
+      "ko": "기본웹주소"
+    },
+    "binarySearch": {
+      "en": "base_two_raw_search_items",
+      "ko": "이진데이터검색"
+    },
+    "Body": {
+      "en": "message_body",
+      "ko": "본문클래스"
+    },
+    "body": {
+      "en": "primary_content_payload",
+      "ko": "본문"
+    },
+    "Boolean": {
+      "en": "true_or_false_logical_type_type",
+      "ko": "참거짓논리형클래스"
+    },
+    "boolean": {
+      "en": "true_or_false_logical_type_ko",
+      "ko": "자바논리형"
+    },
+    "BooleanArray": {
+      "en": "truth_flag_indexed_list",
+      "ko": "참거짓논리형배열"
+    },
+    "booleanArrayOf": {
+      "en": "truth_flag_indexed_list_belonging_to",
+      "ko": "참거짓논리형배열코틀린"
+    },
+    "border": {
+      "en": "visible_outer_edge_stroke",
+      "ko": "외곽테두리선"
+    },
+    "Box": {
+      "en": "rectangular_layout_frame_cls",
+      "ko": "배치상자틀형"
+    },
+    "break": {
+      "en": "break_loop",
+      "ko": "반복탈출",
+      "synonyms_ko": [
+        "즉시멈춤",
+        "빠져나가기",
+        "루프종료",
+        "그만두기"
+      ],
+      "synonyms_en": [
+        "exit_loop",
+        "stop_repeating"
+      ],
+      "grammar_ko": "반복탈출  (반복문 안에서 멈출 때 사용)",
+      "grammar_ex_ko": "반복탈출",
+      "grammar_en": "break_loop",
+      "grammar_ex_en": "break_loop",
+      "role_ko": "반복문 즉시 중단",
+      "role_en": "Exit loop immediately"
+    },
+    "BroadcastChannel": {
+      "en": "send_to_all_comm_channel",
+      "ko": "전체동시알림통신전달채널"
+    },
+    "bufferedReader": {
+      "en": "memory_buffer_stream_reader_ko",
+      "ko": "버퍼읽기도구"
+    },
+    "bufferedWriter": {
+      "en": "memory_buffer_stream_writer_ko",
+      "ko": "버퍼쓰기도구"
+    },
+    "build": {
+      "en": "pickle_op_restore_object_state_ko",
+      "ko": "조립실행"
+    },
+    "buildList": {
+      "en": "build_list_block",
+      "ko": "목록조립블록"
+    },
+    "buildMap": {
+      "en": "build_map_block",
+      "ko": "대응조립블록"
+    },
+    "buildSet": {
+      "en": "construct_build_assign_value",
+      "ko": "결과물생성조립집합"
+    },
+    "buildString": {
+      "en": "build_string_block",
+      "ko": "문자열조립블록"
+    },
+    "Button": {
+      "en": "interactive_clickable_btn_cls",
+      "ko": "누름버튼위젯형"
+    },
+    "by": {
+      "en": "delegate_by",
+      "ko": "위임으로"
+    },
+    "Byte": {
+      "en": "single_eight_bit_number_cls",
+      "ko": "바이트형"
+    },
+    "ByteArray": {
+      "en": "eight_bit_byte_indexed_list_cls",
+      "ko": "바이트배열"
+    },
+    "byteArrayOf": {
+      "en": "eight_bit_byte_indexed_list_belonging_to",
+      "ko": "코틀린바이트배열"
+    },
+    "cache": {
+      "en": "temporary_fast_lookup_store",
+      "ko": "고속임시캐시"
+    },
+    "callbackFlow": {
+      "en": "callback_backed_flow",
+      "ko": "콜백기반흐름"
+    },
+    "cancel": {
+      "en": "revoke_scheduled_operation",
+      "ko": "진행동작취소"
+    },
+    "cancelAndJoin": {
+      "en": "abort_pending_both_and_merge_strings",
+      "ko": "진행동작취소및구분자로합치기"
+    },
+    "Card": {
+      "en": "framed_surface_card_panel",
+      "ko": "카드표면패널"
+    },
+    "catch": {
+      "en": "catch_error",
+      "ko": "에러받기",
+      "synonyms_ko": [
+        "예외잡기",
+        "자스오류처리",
+        "캐치"
+      ],
+      "synonyms_en": [
+        "trap_failure",
+        "js_catch"
+      ],
+      "grammar_ko": "에러받기 [대체할일]",
+      "grammar_ex_ko": "에러받기 안내 콘솔출력",
+      "grammar_en": "catch_error [fallback]",
+      "grammar_ex_en": "catch_error console_log err",
+      "role_ko": "시도 중 오류 잡기 (JS/Java/Kotlin/C++)",
+      "role_en": "Catch error handler (JS/Java)"
+    },
+    "Channel": {
+      "en": "async_message_passing_pipe",
+      "ko": "통신전달채널"
+    },
+    "channelFlow": {
+      "en": "channel_backed_flow",
+      "ko": "채널기반흐름"
+    },
+    "Char": {
+      "en": "single_char_cls",
+      "ko": "문자코틀린"
+    },
+    "CharArray": {
+      "en": "single_char_indexed_list",
+      "ko": "한글자문자형배열"
+    },
+    "charArrayOf": {
+      "en": "single_char_indexed_list_belonging_to",
+      "ko": "한글자문자형배열코틀린"
+    },
+    "CharRange": {
+      "en": "single_char_numeric_range",
+      "ko": "한글자문자형시작끝수치범위"
+    },
+    "CharSequence": {
+      "en": "single_char_ordered_seq",
+      "ko": "한글자문자형순번열시퀀스"
+    },
+    "check": {
+      "en": "check_state",
+      "ko": "상태점검"
+    },
+    "checkNotNull": {
+      "en": "verify_state_logical_not_empty_null",
+      "ko": "상태규칙확인빈값아님"
+    },
+    "chunked": {
+      "en": "split_into_chunks",
+      "ko": "덩어리로나누기"
+    },
+    "class": {
+      "en": "blueprint_class",
+      "ko": "설계도",
+      "synonyms_ko": [
+        "클래스설계",
+        "물건틀",
+        "분류틀"
+      ],
+      "synonyms_en": [
+        "object_template",
+        "class_def"
+      ],
+      "grammar_ko": "설계도 [이름]",
+      "grammar_ex_ko": "설계도 캐릭터",
+      "grammar_en": "blueprint_class [name]",
+      "grammar_ex_en": "blueprint_class Player",
+      "role_ko": "객체 설계도(class)",
+      "role_en": "Object class blueprint"
+    },
+    "ClassCastException": {
+      "en": "blueprint_class_convert_type_caught_fault",
+      "ko": "클래스설계도자료형강제변환예외"
+    },
+    "clear": {
+      "en": "clear_all",
+      "ko": "싹비우기",
+      "synonyms_ko": [
+        "전부지우기",
+        "초기화비우기",
+        "클리어"
+      ],
+      "synonyms_en": [
+        "empty_box",
+        "wipe_all"
+      ],
+      "grammar_ko": "[상자] 싹비우기",
+      "grammar_ex_ko": "장바구니 싹비우기",
+      "grammar_en": "[box] clear_all",
+      "grammar_ex_en": "cart clear_all",
+      "role_ko": "상자 안 내용물 전부 비우기",
+      "role_en": "Empty container completely"
+    },
+    "clickable": {
+      "en": "handle_click",
+      "ko": "클릭처리"
+    },
+    "client": {
+      "en": "consumer_calling_a_server",
+      "ko": "요청클라이언트"
+    },
+    "clip": {
+      "en": "clip_to_shape",
+      "ko": "모양으로자르기"
+    },
+    "close": {
+      "en": "close_resource",
+      "ko": "파일닫기",
+      "synonyms_ko": [
+        "연결닫기",
+        "정리하고닫기"
+      ],
+      "synonyms_en": [
+        "shut_file",
+        "finish_handle"
+      ],
+      "grammar_ko": "[파일] 파일닫기",
+      "grammar_ex_ko": "파일상자 파일닫기",
+      "grammar_en": "close_resource [file]",
+      "grammar_ex_en": "close_resource file",
+      "role_ko": "열었던 파일이나 연결 안전 종료",
+      "role_en": "Close open file or connection"
+    },
+    "ClosedRange": {
+      "en": "is_closed_numeric_range",
+      "ko": "닫힌상태여부시작끝수치범위"
+    },
+    "code": {
+      "en": "program_instructions_or_num",
+      "ko": "프로그램코드"
+    },
+    "collect": {
+      "en": "accumulate_items_into_list",
+      "ko": "결과하나로모음"
+    },
+    "collectAsState": {
+      "en": "collect_flow_as_state",
+      "ko": "흐름을상태로수집"
+    },
+    "collectAsStateWithLifecycle": {
+      "en": "gather_results_viewed_as_held_state_using_context_object_lifetime_repeat_forever",
+      "ko": "생명주기연동상태수집"
+    },
+    "Collection": {
+      "en": "abstract_group_of_elements",
+      "ko": "자료모음집합"
+    },
+    "collectLatest": {
+      "en": "gather_results_most_recent",
+      "ko": "결과하나로모음가장최신판"
+    },
+    "color": {
+      "en": "content_color",
+      "ko": "내용색"
+    },
+    "Column": {
+      "en": "table_column",
+      "ko": "세로줄"
+    },
+    "ColumnInfo": {
+      "en": "vertical_column_details_info",
+      "ko": "세로열칸세부정보"
+    },
+    "combine": {
+      "en": "combine_flows",
+      "ko": "흐름합치기"
+    },
+    "companion": {
+      "en": "companion_object",
+      "ko": "동반객체"
+    },
+    "compareAndSet": {
+      "en": "order_compare_both_and_assign_value",
+      "ko": "순서크기비교및집합"
+    },
+    "component1": {
+      "en": "destructure_first",
+      "ko": "첫번째분해"
+    },
+    "connectTimeout": {
+      "en": "open_link_wait_limit",
+      "ko": "통신연결열기제한대기시간"
+    },
+    "const": {
+      "en": "const_value",
+      "ko": "상수선언",
+      "synonyms_ko": [
+        "고정상자",
+        "불변상수",
+        "안바뀌는값"
+      ],
+      "synonyms_en": [
+        "fixed_box",
+        "locked_value",
+        "immutable_const"
+      ],
+      "grammar_ko": "상수선언 [이름]에 [값] 넣기",
+      "grammar_ex_ko": "상수선언 만점에 100 넣기",
+      "grammar_en": "const_value [name] = [value]",
+      "grammar_ex_en": "const_value max_score = 100",
+      "role_ko": "값이 안 바뀌는 상수 선언",
+      "role_en": "Constant immutable binding"
+    },
+    "constructor": {
+      "en": "method_initializing_new_obj",
+      "ko": "인스턴스생성자"
+    },
+    "consumeEach": {
+      "en": "drain_consume_for_every_one",
+      "ko": "데이터읽어소비각원소마다"
+    },
+    "contains": {
+      "en": "check_if_item_is_member",
+      "ko": "원소포함여부"
+    },
+    "containsAll": {
+      "en": "includes_item_every_item",
+      "ko": "원소포함여부모든항목전체"
+    },
+    "containsKey": {
+      "en": "includes_item_lookup_key",
+      "ko": "원소포함여부검색키"
+    },
+    "containsValue": {
+      "en": "includes_item_stored_data",
+      "ko": "원소포함여부저장된데이터값"
+    },
+    "content": {
+      "en": "primary_body_data_inside",
+      "ko": "내부본문내용"
+    },
+    "continue": {
+      "en": "continue_next",
+      "ko": "다음차례",
+      "synonyms_ko": [
+        "이번건넘기",
+        "건너뛰기",
+        "계속진행"
+      ],
+      "synonyms_en": [
+        "skip_turn",
+        "next_iteration"
+      ],
+      "grammar_ko": "다음차례",
+      "grammar_ex_ko": "다음차례",
+      "grammar_en": "continue_next",
+      "grammar_ex_en": "continue_next",
+      "role_ko": "이번 회차만 건너뛰고 다음 반복으로",
+      "role_en": "Skip current iteration and move to next"
+    },
+    "copy": {
+      "en": "copy_data_class",
+      "ko": "자료클래스복사"
+    },
+    "copyOf": {
+      "en": "duplicate_belonging_to",
+      "ko": "복제본코틀린"
+    },
+    "copyOfRange": {
+      "en": "duplicate_belonging_to_numeric_range",
+      "ko": "복제본범위"
+    },
+    "copyTo": {
+      "en": "duplicate_convert_to",
+      "ko": "복제본변환"
+    },
+    "CoroutineContext": {
+      "en": "suspendable_fn_scope_context",
+      "ko": "중단재개코루틴실행공유문맥"
+    },
+    "CoroutineDispatcher": {
+      "en": "suspendable_fn_event_router",
+      "ko": "중단재개코루틴사건명령분배기"
+    },
+    "CoroutineScope": {
+      "en": "suspendable_fn_lifetime_scope",
+      "ko": "중단재개코루틴유효생명범위"
+    },
+    "coroutineScope": {
+      "en": "child_coroutine_scope",
+      "ko": "자식코루틴범위"
+    },
+    "count": {
+      "en": "count_matches",
+      "ko": "개수세기",
+      "synonyms_ko": [
+        "몇번나옴",
+        "등장횟수",
+        "카운트"
+      ],
+      "synonyms_en": [
+        "tally_items",
+        "how_often"
+      ],
+      "grammar_ko": "[목록]에서 [값] 개수세기",
+      "grammar_ex_ko": "점수 개수세기",
+      "grammar_en": "[list] count_matches [val]",
+      "grammar_ex_en": "scores count_matches 100",
+      "role_ko": "같은 값이 몇 번 들어있는지 세기",
+      "role_en": "Count matching occurrences"
+    },
+    "create": {
+      "en": "instantiate_new_resource",
+      "ko": "새로생성하기"
+    },
+    "createNewFile": {
+      "en": "make_new_create_fresh_disk_file",
+      "ko": "생성새파일객체"
+    },
+    "crossinline": {
+      "en": "crossinline_lambda",
+      "ko": "비지역반환금지"
+    },
+    "currentBackStackEntry": {
+      "en": "present_item_step_backward_lifo_or_overlay_single_entry",
+      "ko": "현재이전뒤로가기겹침쌓기스택항목"
+    },
+    "Dao": {
+      "en": "database_access_object_layer",
+      "ko": "자료저장접근객체"
+    },
+    "data": {
+      "en": "data_class_mod",
+      "ko": "자료클래스"
+    },
+    "Database": {
+      "en": "persistent_queryable_storage_cls",
+      "ko": "데이터베이스저장소형"
+    },
+    "databaseBuilder": {
+      "en": "data_store_fluent_builder",
+      "ko": "데이터베이스저장소조립기"
+    },
+    "debounce": {
+      "en": "debounce_flow",
+      "ko": "흐름떨림완화"
+    },
+    "decodeFromJsonElement": {
+      "en": "unpack_bytes_source_origin_json_format_item_element",
+      "ko": "복호화출처제이슨형식단일요소원소"
+    },
+    "decodeFromString": {
+      "en": "unpack_bytes_source_origin_text_string",
+      "ko": "복호화출처문자열"
+    },
+    "Default": {
+      "en": "fallback_case_cls",
+      "ko": "기본객체"
+    },
+    "Deferred": {
+      "en": "postponed_computation_holder",
+      "ko": "나중실행지연작업"
+    },
+    "delay": {
+      "en": "wait_before_running_action",
+      "ko": "시간지연대기"
+    },
+    "delegate": {
+      "en": "forward_handling_to_helper",
+      "ko": "역할위임대리자"
+    },
+    "DELETE": {
+      "en": "http_remove_resource_method_as_uppercase_constant_flag",
+      "ko": "웹자원삭제요청메서드상수"
+    },
+    "Delete": {
+      "en": "http_remove_resource_method_type",
+      "ko": "웹자원삭제요청메서드클래스"
+    },
+    "delete": {
+      "en": "http_remove_resource_method",
+      "ko": "웹자원삭제요청메서드"
+    },
+    "Deprecated": {
+      "en": "legacy_marked_for_removal_cls",
+      "ko": "지원종료예정낡음형"
+    },
+    "derivedStateOf": {
+      "en": "derive_computed_state",
+      "ko": "계산상태파생"
+    },
+    "Dispatchers": {
+      "en": "registered_message_routers",
+      "ko": "명령분배기목록"
+    },
+    "distinct": {
+      "en": "unique_elements",
+      "ko": "중복없는원소"
+    },
+    "distinctBy": {
+      "en": "unique_values_ordered_by",
+      "ko": "중복제거고유별"
+    },
+    "distinctUntilChanged": {
+      "en": "skip_unchanged_flow",
+      "ko": "같은값건너뛰기"
+    },
+    "Divider": {
+      "en": "thin_separator_line",
+      "ko": "얇은구분선"
+    },
+    "Double": {
+      "en": "double_number",
+      "ko": "배정밀도실수객체"
+    },
+    "double": {
+      "en": "sixty_four_bit_decimal",
+      "ko": "배정밀실수형"
+    },
+    "DoubleArray": {
+      "en": "double_float_indexed_list",
+      "ko": "배정밀실수배열"
+    },
+    "doubleArrayOf": {
+      "en": "double_float_indexed_list_belonging_to",
+      "ko": "배정밀실수배열코틀린"
+    },
+    "downTo": {
+      "en": "downward_convert_to",
+      "ko": "아래방향눌림변환"
+    },
+    "drop": {
+      "en": "discard_matching_items",
+      "ko": "제거버리기"
+    },
+    "dropLast": {
+      "en": "discard_final_item",
+      "ko": "제거버리기맨마지막항목"
+    },
+    "dropLastWhile": {
+      "en": "discard_final_item_during_loop",
+      "ko": "제거버리기마지막조건참동안반복"
+    },
+    "dropWhile": {
+      "en": "discard_during_loop_ko",
+      "ko": "제거버리기조건참동안반복코틀린"
+    },
+    "dynamic": {
+      "en": "resolved_at_execution_time_ko",
+      "ko": "동적실행시점코틀린"
+    },
+    "elementAt": {
+      "en": "item_element_at_spot",
+      "ko": "단일요소원소위치에서"
+    },
+    "elementAtOrElse": {
+      "en": "item_element_at_spot_either_or_otherwise_branch",
+      "ko": "단일요소원소위치또는아니면"
+    },
+    "elementAtOrNull": {
+      "en": "item_element_at_spot_either_or_empty_null",
+      "ko": "단일요소원소위치또는값없음빈참조"
+    },
+    "else": {
+      "en": "otherwise_else",
+      "ko": "아니면",
+      "synonyms_ko": [
+        "그밖에",
+        "그렇지않으면",
+        "나머지경우",
+        "안맞으면"
+      ],
+      "synonyms_en": [
+        "fallback_else",
+        "if_not_so",
+        "or_else"
+      ],
+      "grammar_ko": "아니면 [할일]  (만약 줄 바로 다음 줄에 적기)",
+      "grammar_ex_ko": "아니면 불합격 출력",
+      "grammar_en": "otherwise_else [action]  (after an if block)",
+      "grammar_ex_en": "otherwise_else print fail",
+      "role_ko": "조건이 모두 아닐 때",
+      "role_en": "Fallback branch when condition is false"
+    },
+    "emit": {
+      "en": "broadcast_signal_to_listeners",
+      "ko": "신호사건방출"
+    },
+    "emptyArray": {
+      "en": "has_zero_items_indexed_list",
+      "ko": "비어있음상태배열"
+    },
+    "emptyList": {
+      "en": "empty_immutable_list",
+      "ko": "빈불변목록"
+    },
+    "emptyMap": {
+      "en": "empty_immutable_map",
+      "ko": "빈불변대응"
+    },
+    "emptySequence": {
+      "en": "has_zero_items_ordered_seq",
+      "ko": "비어있음상태순번열시퀀스"
+    },
+    "emptySet": {
+      "en": "empty_immutable_set",
+      "ko": "빈불변집합"
+    },
+    "enabled": {
+      "en": "control_enabled",
+      "ko": "조작가능"
+    },
+    "encodeToJsonElement": {
+      "en": "pack_format_convert_to_json_format_item_element",
+      "ko": "바이트부호화변환제이슨형식단일요소원소"
+    },
+    "encodeToString": {
+      "en": "pack_format_convert_to_text_string",
+      "ko": "바이트부호화변환문자열"
+    },
+    "enqueue": {
+      "en": "append_item_to_wait_queue",
+      "ko": "대기열뒤쪽넣기"
+    },
+    "ensureActive": {
+      "en": "guarantee_that_selected",
+      "ko": "반드시조건보장현재활성"
+    },
+    "Entity": {
+      "en": "persisted_model_or_html_code",
+      "ko": "개체엔티티"
+    },
+    "entries": {
+      "en": "list_of_key_value_pairs",
+      "ko": "키값쌍항목들"
+    },
+    "enum": {
+      "en": "named_choices",
+      "ko": "열거"
+    },
+    "error": {
+      "en": "throw_illegal_state",
+      "ko": "잘못된상태오류"
+    },
+    "Exception": {
+      "en": "unexpected_error_object_cls",
+      "ko": "예외형"
+    },
+    "exceptionOrNull": {
+      "en": "caught_fault_either_or_empty_null",
+      "ko": "예외또는값없음빈참조"
+    },
+    "execute": {
+      "en": "carry_out_query_or_command",
+      "ko": "명령질의실행"
+    },
+    "exists": {
+      "en": "item_exists",
+      "ko": "존재"
+    },
+    "expect": {
+      "en": "platform_expect",
+      "ko": "플랫폼기대"
+    },
+    "extension": {
+      "en": "plugin_addon_or_file_suffix",
+      "ko": "확장기능접미사"
+    },
+    "factory": {
+      "en": "helper_building_instances",
+      "ko": "인스턴스생성공장"
+    },
+    "false": {
+      "en": "bool_false",
+      "ko": "거짓",
+      "synonyms_ko": [
+        "틀림",
+        "펄스",
+        "거짓값"
+      ],
+      "synonyms_en": [
+        "no_false",
+        "wrong_flag"
+      ],
+      "grammar_ko": "거짓",
+      "grammar_ex_ko": "실패에 거짓 넣기",
+      "grammar_en": "bool_false",
+      "grammar_ex_en": "failed = bool_false",
+      "role_ko": "논리 거짓(아니다) 값",
+      "role_en": "Boolean false value"
+    },
+    "Field": {
+      "en": "named_slot_inside_record_type",
+      "ko": "구조체데이터칸클래스"
+    },
+    "field": {
+      "en": "named_slot_inside_record",
+      "ko": "구조체데이터칸"
+    },
+    "FieldMap": {
+      "en": "struct_field_transform_each",
+      "ko": "구조체데이터칸사전매핑변환"
+    },
+    "file": {
+      "en": "named_document_on_storage",
+      "ko": "파일객체"
+    },
+    "fill": {
+      "en": "paint_interior_or_pad_value",
+      "ko": "내부영역채우기"
+    },
+    "fillMaxHeight": {
+      "en": "fill_available_height",
+      "ko": "세로최대채우기"
+    },
+    "fillMaxSize": {
+      "en": "fill_shape_upper_limit_byte_or_count",
+      "ko": "내부영역채우기최댓값용량크기"
+    },
+    "fillMaxWidth": {
+      "en": "fill_available_width",
+      "ko": "가로최대채우기"
+    },
+    "filter": {
+      "en": "filter_items",
+      "ko": "골라내기",
+      "synonyms_ko": [
+        "고르기",
+        "골라",
+        "걸러내기",
+        "추려내기",
+        "필터"
+      ],
+      "synonyms_en": [
+        "pick_matching",
+        "keep_where",
+        "sift_items"
+      ],
+      "grammar_ko": "[목록] [조건] 골라내기  (예: 점수 80 이상 골라내기)",
+      "grammar_ex_ko": "점수 80 이상 골라내기",
+      "grammar_en": "filter_items [list] where [condition]",
+      "grammar_ex_en": "filter_items scores >= 80",
+      "role_ko": "조건에 맞는 항목만 골라내기",
+      "role_en": "Filter items matching condition"
+    },
+    "filterIndexed": {
+      "en": "keep_matching_slot_position",
+      "ko": "거름색인됨"
+    },
+    "filterIsInstance": {
+      "en": "keep_matching_check_is_class_instance",
+      "ko": "거름여부확인클래스실체인스턴스"
+    },
+    "filterNot": {
+      "en": "keep_matching_logical_not",
+      "ko": "거름아님"
+    },
+    "filterNotNull": {
+      "en": "keep_matching_logical_not_empty_null",
+      "ko": "거름빈값아님"
+    },
+    "final": {
+      "en": "forbid_override",
+      "ko": "재정의금지"
+    },
+    "finally": {
+      "en": "always_finally",
+      "ko": "마무리항상",
+      "synonyms_ko": [
+        "끝나고무조건",
+        "항상실행마무리"
+      ],
+      "synonyms_en": [
+        "cleanup_always",
+        "finish_block"
+      ],
+      "grammar_ko": "마무리항상 [정리할일]",
+      "grammar_ex_ko": "마무리항상 파일닫기",
+      "grammar_en": "always_finally [cleanup]",
+      "grammar_ex_en": "always_finally close_resource",
+      "role_ko": "성공/실패 상관없이 마지막에 항상 실행",
+      "role_en": "Finally block always executed"
+    },
+    "find": {
+      "en": "find_first_match",
+      "ko": "첫번째맞는것찾기"
+    },
+    "findLast": {
+      "en": "find_last_match",
+      "ko": "마지막맞는것찾기"
+    },
+    "first": {
+      "en": "first_flow_value",
+      "ko": "흐름첫번째값"
+    },
+    "firstOrNull": {
+      "en": "initial_first_either_or_empty_null",
+      "ko": "첫번째또는값없음빈참조"
+    },
+    "flatMap": {
+      "en": "map_then_flatten",
+      "ko": "변환후평탄화"
+    },
+    "flatMapConcat": {
+      "en": "flattened_transform_each_join_together",
+      "ko": "일차원평탄화맵나란히이어붙임"
+    },
+    "flatMapIndexed": {
+      "en": "flattened_transform_each_slot_position",
+      "ko": "일차원평탄화맵색인됨"
+    },
+    "flatMapLatest": {
+      "en": "switch_to_latest_flow",
+      "ko": "최신흐름으로전환"
+    },
+    "flatMapMerge": {
+      "en": "flattened_transform_each_combine_both",
+      "ko": "일차원평탄화맵하나로병합합치기"
+    },
+    "Float": {
+      "en": "decimal_number_type",
+      "ko": "실수클래스"
+    },
+    "float": {
+      "en": "decimal_float",
+      "ko": "소수형",
+      "synonyms_ko": [
+        "실수형",
+        "소수점수",
+        "플로트"
+      ],
+      "synonyms_en": [
+        "floating_num",
+        "cast_float"
+      ],
+      "grammar_ko": "[값] 소수형",
+      "grammar_ex_ko": "평균 소수형",
+      "grammar_en": "decimal_float [value]",
+      "grammar_ex_en": "decimal_float avg",
+      "role_ko": "소수점 있는 실수형",
+      "role_en": "Floating decimal number"
+    },
+    "FloatArray": {
+      "en": "decimal_number_indexed_list",
+      "ko": "실수배열"
+    },
+    "floatArrayOf": {
+      "en": "decimal_number_indexed_list_belonging_to",
+      "ko": "실수배열코틀린"
+    },
+    "FloatingActionButton": {
+      "en": "float_or_popup_user_action_push_button",
+      "ko": "부동소수또는떠있는실행동작누름버튼위젯"
+    },
+    "Flow": {
+      "en": "cold_reactive_data_stream_type",
+      "ko": "비동기데이터흐름클래스"
+    },
+    "flow": {
+      "en": "cold_reactive_data_stream",
+      "ko": "비동기데이터흐름"
+    },
+    "flowOf": {
+      "en": "async_stream_belonging_to",
+      "ko": "비동기데이터흐름코틀린"
+    },
+    "fold": {
+      "en": "fold_from_initial",
+      "ko": "초기값부터접기"
+    },
+    "foldIndexed": {
+      "en": "collapse_reduce_slot_position",
+      "ko": "접기또는단일값축약색인됨"
+    },
+    "foldRight": {
+      "en": "collapse_reduce_east_right_side",
+      "ko": "접기또는단일값축약오른쪽방향"
+    },
+    "fontSize": {
+      "en": "text_font_size",
+      "ko": "글자크기"
+    },
+    "fontWeight": {
+      "en": "text_font_weight",
+      "ko": "글자굵기"
+    },
+    "for": {
+      "en": "repeat_loop",
+      "ko": "반복",
+      "synonyms_ko": [
+        "하나씩반복",
+        "차례반복",
+        "횟수반복",
+        "목록순회",
+        "포문"
+      ],
+      "synonyms_en": [
+        "loop_each",
+        "iterate_each",
+        "each_item",
+        "repeat_times"
+      ],
+      "grammar_ko": "[목록] 하나씩 꺼내 [할일]  또는  [횟수]번 반복",
+      "grammar_ex_ko": "점수 5번 반복",
+      "grammar_en": "repeat_loop each item in [list]",
+      "grammar_ex_en": "repeat_loop 5 times",
+      "role_ko": "목록이나 횟수만큼 반복",
+      "role_en": "For loop over items or count"
+    },
+    "forEach": {
+      "en": "for_each_do",
+      "ko": "모두실행",
+      "synonyms_ko": [
+        "하나씩일시키기",
+        "전체순회",
+        "포이치"
+      ],
+      "synonyms_en": [
+        "visit_every_item",
+        "do_for_each"
+      ],
+      "grammar_ko": "[배열] 모두실행",
+      "grammar_ex_ko": "점수 모두실행",
+      "grammar_en": "[array] for_each_do [step]",
+      "grammar_ex_en": "scores for_each_do log",
+      "role_ko": "모든 항목마다 차례로 일 실행",
+      "role_en": "Run action for each item"
+    },
+    "forEachIndexed": {
+      "en": "repeat_loop_for_every_one_slot_position",
+      "ko": "용각원소마다색인됨"
+    },
+    "forEachLine": {
+      "en": "repeat_loop_for_every_one_text_line",
+      "ko": "반복순회문각원소마다한줄문자행"
+    },
+    "FormBody": {
+      "en": "input_form_main_body",
+      "ko": "입력서식양식본문주요내용"
+    },
+    "FormUrlEncoded": {
+      "en": "input_form_web_url_pack_format",
+      "ko": "입력서식양식웹주소바이트부호화됨"
+    },
+    "fun": {
+      "en": "kotlin_fun",
+      "ko": "코틀린함수",
+      "synonyms_ko": [
+        "펀함수",
+        "짧은함수"
+      ],
+      "synonyms_en": [
+        "fun_decl",
+        "kt_function"
+      ],
+      "grammar_ko": "코틀린함수 [이름] 재료 [매개변수]",
+      "grammar_ex_ko": "코틀린함수 인사 재료 이름",
+      "grammar_en": "kotlin_fun [name] ([params])",
+      "grammar_ex_en": "kotlin_fun greet (name)",
+      "role_ko": "Kotlin 함수 정의",
+      "role_en": "Kotlin function keyword"
+    },
+    "generateSequence": {
+      "en": "produce_values_ordered_seq",
+      "ko": "생성순번열시퀀스"
+    },
+    "GET": {
+      "en": "get_constant",
+      "ko": "웹조회요청"
+    },
+    "get": {
+      "en": "fetch_value_ko",
+      "ko": "가져오기"
+    },
+    "getOrDefault": {
+      "en": "fetch_read_either_or_fallback_val",
+      "ko": "또는미지정기본값조회"
+    },
+    "getOrElse": {
+      "en": "index_or_else",
+      "ko": "순번아니면대신"
+    },
+    "getOrNull": {
+      "en": "index_or_null",
+      "ko": "순번아니면빈값"
+    },
+    "getOrPut": {
+      "en": "fetch_read_either_or_store_item",
+      "ko": "또는항목넣어저장조회"
+    },
+    "getOrThrow": {
+      "en": "fetch_read_either_or_raise_exception",
+      "ko": "또는오류예외던지기조회"
+    },
+    "getValue": {
+      "en": "fetch_read_stored_data",
+      "ko": "저장된데이터값조회"
+    },
+    "groupBy": {
+      "en": "bundled_group_ordered_by_ko",
+      "ko": "묶어모으기"
+    },
+    "groupingBy": {
+      "en": "bundled_group_ordered_by_as_kotlin_member_variant",
+      "ko": "분류수집기"
+    },
+    "HashMap": {
+      "en": "digest_hash_transform_each",
+      "ko": "고정해시값계산사전매핑변환"
+    },
+    "hashMapOf": {
+      "en": "digest_hash_transform_each_belonging_to",
+      "ko": "고정해시값계산맵"
+    },
+    "HashSet": {
+      "en": "digest_hash_assign_value",
+      "ko": "고정해시값계산집합"
+    },
+    "hashSetOf": {
+      "en": "digest_hash_assign_value_belonging_to",
+      "ko": "고정해시값계산집합코틀린"
+    },
+    "Header": {
+      "en": "leading_banner_or_metadata_type",
+      "ko": "상단머리글영역클래스"
+    },
+    "header": {
+      "en": "leading_banner_or_metadata",
+      "ko": "상단머리글영역"
+    },
+    "HeaderMap": {
+      "en": "top_header_transform_each",
+      "ko": "상단머리글영역사전매핑변환"
+    },
+    "headers": {
+      "en": "multiple_top_header",
+      "ko": "상단머리글영역들"
+    },
+    "height": {
+      "en": "vertical_pixel_or_line_span",
+      "ko": "세로높이크기"
+    },
+    "hiltViewModel": {
+      "en": "inject_screen_model",
+      "ko": "화면모델주입"
+    },
+    "HorizontalDivider": {
+      "en": "horizontal_rule",
+      "ko": "가로구분선"
+    },
+    "HTTP": {
+      "en": "web_protocol_const",
+      "ko": "웹하이퍼텍스트규약"
+    },
+    "HttpClient": {
+      "en": "web_protocol_client_peer",
+      "ko": "웹통신규약요청클라이언트"
+    },
+    "Icon": {
+      "en": "vector_icon_view",
+      "ko": "아이콘뷰"
+    },
+    "IconButton": {
+      "en": "icon_press_button",
+      "ko": "아이콘단추"
+    },
+    "if": {
+      "en": "if_when",
+      "ko": "만약",
+      "synonyms_ko": [
+        "만일",
+        "조건이면",
+        "받는다면",
+        "입력된다면",
+        "일때",
+        "조건문"
+      ],
+      "synonyms_en": [
+        "when_if",
+        "suppose_if",
+        "condition_check",
+        "in_case"
+      ],
+      "grammar_ko": "만약 [대상] [비교값] [이상/이하/같음]이면 [할일]  (예: 만약 점수 80 이상이면 합격 출력)",
+      "grammar_ex_ko": "만약 점수 80 이상이면 합격 출력",
+      "grammar_en": "if_when [target] >= [value] then [action]",
+      "grammar_ex_en": "when score >= 80 print pass",
+      "role_ko": "조건 분기 시작",
+      "role_en": "Conditional branch"
+    },
+    "ifBlank": {
+      "en": "when_cond_empty_blank",
+      "ko": "만약조건빈공백상태"
+    },
+    "ifEmpty": {
+      "en": "when_cond_has_zero_items",
+      "ko": "만약조건비어있음상태"
+    },
+    "Ignore": {
+      "en": "intentionally_skip_or_mask_cls",
+      "ko": "무시건너뛰기형"
+    },
+    "Image": {
+      "en": "bitmap_image_view",
+      "ko": "그림뷰"
+    },
+    "import": {
+      "en": "bring_tool",
+      "ko": "도구불러오기",
+      "synonyms_ko": [
+        "모듈가져오기",
+        "외부도구가져오기",
+        "임포트"
+      ],
+      "synonyms_en": [
+        "import_module",
+        "load_library"
+      ],
+      "grammar_ko": "[도구이름] 도구불러오기",
+      "grammar_ex_ko": "수학 도구불러오기",
+      "grammar_en": "bring_tool [module]",
+      "grammar_ex_en": "bring_tool math",
+      "role_ko": "다른 파일·라이브러리 도구 가져오기",
+      "role_en": "Import external library or module"
+    },
+    "in": {
+      "en": "contains_or_iterator",
+      "ko": "포함또는순회"
+    },
+    "Index": {
+      "en": "item_index_cls",
+      "ko": "순번형"
+    },
+    "indexOf": {
+      "en": "slot_position_belonging_to",
+      "ko": "색인코틀린"
+    },
+    "indexOfFirst": {
+      "en": "slot_position_belonging_to_initial_first",
+      "ko": "색인첫번째"
+    },
+    "indexOfLast": {
+      "en": "slot_position_belonging_to_final_item",
+      "ko": "색인마지막"
+    },
+    "IndexOutOfBoundsException": {
+      "en": "slot_position_output_dest_belonging_to_min_max_edges_caught_fault",
+      "ko": "색인범위초과예외"
+    },
+    "infix": {
+      "en": "infix_function",
+      "ko": "중위함수"
+    },
+    "init": {
+      "en": "set_up_initial_state",
+      "ko": "초기화설정"
+    },
+    "inject": {
+      "en": "supply_dependency_into_scope",
+      "ko": "의존객체주입"
+    },
+    "inline": {
+      "en": "inline_function_mod",
+      "ko": "인라인함수"
+    },
+    "inMemoryDatabaseBuilder": {
+      "en": "inside_of_ram_memory_data_store_fluent_builder",
+      "ko": "내주기억메모리디비저장소조립기"
+    },
+    "inner": {
+      "en": "inner_nested_class",
+      "ko": "내부중첩클래스"
+    },
+    "inputStream": {
+      "en": "user_input_data_stream",
+      "ko": "입력창스트림"
+    },
+    "Insert": {
+      "en": "add_item_at_chosen_position",
+      "ko": "원소사이에삽입"
+    },
+    "install": {
+      "en": "register_handler_or_package",
+      "ko": "패키지기능설치"
+    },
+    "Int": {
+      "en": "whole_number",
+      "ko": "정수"
+    },
+    "int": {
+      "en": "whole_int",
+      "ko": "정수형",
+      "synonyms_ko": [
+        "딱떨어지는수",
+        "소수없는수",
+        "정수변환"
+      ],
+      "synonyms_en": [
+        "integer_num",
+        "cast_int"
+      ],
+      "grammar_ko": "[값] 정수형",
+      "grammar_ex_ko": "나이 정수형",
+      "grammar_en": "whole_int [value]",
+      "grammar_ex_en": "whole_int age",
+      "role_ko": "정수 자료형·변환",
+      "role_en": "Whole integer type/conversion"
+    },
+    "IntArray": {
+      "en": "whole_integer_indexed_list",
+      "ko": "정수형배열"
+    },
+    "intArrayOf": {
+      "en": "whole_integer_indexed_list_belonging_to",
+      "ko": "정수형배열코틀린"
+    },
+    "Interceptor": {
+      "en": "hook_intercepting_calls",
+      "ko": "호출가로채기"
+    },
+    "interface": {
+      "en": "abstract_method_signature_set",
+      "ko": "동작규약인터페이스"
+    },
+    "internal": {
+      "en": "module_internal",
+      "ko": "모듈내부"
+    },
+    "IntRange": {
+      "en": "whole_integer_numeric_range",
+      "ko": "정수형시작끝수치범위"
+    },
+    "invokeOnClose": {
+      "en": "execute_call_when_event_shut_release",
+      "ko": "동적메서드호출발생시닫기"
+    },
+    "invokeOnCompletion": {
+      "en": "execute_call_when_event_autocomplete",
+      "ko": "동적메서드호출발생시자동완성작업완료"
+    },
+    "IO": {
+      "en": "input_output_const",
+      "ko": "입출력대문자"
+    },
+    "is": {
+      "en": "type_check_is",
+      "ko": "형검사"
+    },
+    "isActive": {
+      "en": "check_is_selected",
+      "ko": "여부확인현재활성"
+    },
+    "isBlank": {
+      "en": "check_space_or_tab_char",
+      "ko": "공백또는탭문자여부"
+    },
+    "isDirectory": {
+      "en": "check_is_folder_path",
+      "ko": "여부확인디렉터리폴더코틀린"
+    },
+    "isEmpty": {
+      "en": "check_is_has_zero_items",
+      "ko": "여부확인비어있음상태"
+    },
+    "isFailure": {
+      "en": "check_is_failed_outcome",
+      "ko": "여부확인작업실패상태"
+    },
+    "isFile": {
+      "en": "check_is_disk_file_ko",
+      "ko": "여부확인파일객체코틀린"
+    },
+    "isNotBlank": {
+      "en": "check_is_logical_not_empty_blank",
+      "ko": "여부확인공백아님"
+    },
+    "isNotEmpty": {
+      "en": "check_is_logical_not_has_zero_items",
+      "ko": "여부확인비지않음"
+    },
+    "isNullOrBlank": {
+      "en": "check_is_empty_null_either_or_empty_blank",
+      "ko": "여부확인값없음빈참조또는빈공백상태"
+    },
+    "isNullOrEmpty": {
+      "en": "check_is_empty_null_either_or_has_zero_items",
+      "ko": "여부확인값없음빈참조또는비어있음상태"
+    },
+    "isSuccess": {
+      "en": "check_is_succeeded",
+      "ko": "여부확인성공완료결과"
+    },
+    "it": {
+      "en": "current_lambda_arg",
+      "ko": "현재인자"
+    },
+    "item": {
+      "en": "lazy_list_item",
+      "ko": "지연목록항목"
+    },
+    "items": {
+      "en": "lazy_list_items",
+      "ko": "지연목록여러항목"
+    },
+    "Iterator": {
+      "en": "stateful_sequence_cursor",
+      "ko": "순차반복자"
+    },
+    "Job": {
+      "en": "coroutine_job",
+      "ko": "코루틴작업"
+    },
+    "join": {
+      "en": "join_pieces",
+      "ko": "이어붙이기",
+      "synonyms_ko": [
+        "조각합치기",
+        "하나로잇기",
+        "조인"
+      ],
+      "synonyms_en": [
+        "glue_text",
+        "combine_parts"
+      ],
+      "grammar_ko": "[목록] [연결글]로 이어붙이기",
+      "grammar_ex_ko": "단어들 이어붙이기",
+      "grammar_en": "[list] join_pieces [glue]",
+      "grammar_ex_en": "words join_pieces space",
+      "role_ko": "조각 글자들을 하나로 연결",
+      "role_en": "Join strings into one text"
+    },
+    "joinTo": {
+      "en": "merge_strings_convert_to",
+      "ko": "구분자로합치기변환"
+    },
+    "joinToString": {
+      "en": "merge_strings_convert_to_text_string",
+      "ko": "구분자로합치기변환문자열"
+    },
+    "Json": {
+      "en": "json_text_format_cls",
+      "ko": "제이슨객체"
+    },
+    "JsonArray": {
+      "en": "json_format_indexed_list_type",
+      "ko": "제이슨형식배열클래스"
+    },
+    "jsonArray": {
+      "en": "json_format_indexed_list",
+      "ko": "제이슨형식배열"
+    },
+    "JsonObject": {
+      "en": "json_format_runtime_object_type",
+      "ko": "제이슨형식기본객체클래스"
+    },
+    "jsonObject": {
+      "en": "json_format_runtime_object",
+      "ko": "제이슨형식기본객체"
+    },
+    "JvmField": {
+      "en": "java_vm_runtime_struct_field",
+      "ko": "자바가상머신구조체데이터칸"
+    },
+    "JvmName": {
+      "en": "java_vm_runtime_symbol_title",
+      "ko": "자바가상머신이름명칭"
+    },
+    "JvmStatic": {
+      "en": "java_vm_runtime_class_level",
+      "ko": "자바가상머신정적고정멤버"
+    },
+    "key": {
+      "en": "stable_item_key",
+      "ko": "고정항목키"
+    },
+    "keys": {
+      "en": "multiple_lookup_key",
+      "ko": "검색키들"
+    },
+    "koinViewModel": {
+      "en": "kotlin_di_display_view_data_model",
+      "ko": "코인화면뷰모델조회"
+    },
+    "label": {
+      "en": "field_label",
+      "ko": "칸제목"
+    },
+    "last": {
+      "en": "last_element",
+      "ko": "마지막원소"
+    },
+    "lastIndexOf": {
+      "en": "final_item_slot_position_belonging_to",
+      "ko": "마지막색인코틀린"
+    },
+    "lastOrNull": {
+      "en": "final_item_either_or_empty_null",
+      "ko": "마지막또는값없음빈참조"
+    },
+    "lateinit": {
+      "en": "defer_non_null_property_init",
+      "ko": "지연초기화속성선언"
+    },
+    "launch": {
+      "en": "start_new_task_or_coroutine",
+      "ko": "비동기작업시작"
+    },
+    "LaunchedEffect": {
+      "en": "start_async_side_effect",
+      "ko": "비동기작업시작됨부가효과실행"
+    },
+    "launchIn": {
+      "en": "launch_flow_in_scope",
+      "ko": "범위에서흐름시작"
+    },
+    "Lazy": {
+      "en": "defer_creation_until_used",
+      "ko": "사용시지연계산"
+    },
+    "lazy": {
+      "en": "lazy_delegate",
+      "ko": "지연위임"
+    },
+    "LazyColumn": {
+      "en": "compute_on_need_vertical_column",
+      "ko": "사용시지연계산세로열칸"
+    },
+    "lazyOf": {
+      "en": "compute_on_need_belonging_to",
+      "ko": "사용시지연계산코틀린"
+    },
+    "LazyRow": {
+      "en": "lazy_horizontal_list",
+      "ko": "지연가로목록"
+    },
+    "length": {
+      "en": "item_length",
+      "ko": "글자길이",
+      "synonyms_ko": [
+        "배열길이",
+        "길이속성",
+        "칸길이"
+      ],
+      "synonyms_en": [
+        "array_length",
+        "string_length"
+      ],
+      "grammar_ko": "[배열] 글자길이",
+      "grammar_ex_ko": "이름 글자길이",
+      "grammar_en": "[array] item_length",
+      "grammar_ex_en": "items item_length",
+      "role_ko": "배열·문자열 길이 속성 (JS/Java)",
+      "role_en": "Length property (JS/Java)"
+    },
+    "let": {
+      "en": "let_var",
+      "ko": "변수선언",
+      "synonyms_ko": [
+        "바꾸는상자",
+        "변동변수",
+        "렛상자"
+      ],
+      "synonyms_en": [
+        "mutable_box",
+        "declare_let"
+      ],
+      "grammar_ko": "변수선언 [이름]에 [값] 넣기",
+      "grammar_ex_ko": "변수선언 점수에 80 넣기",
+      "grammar_en": "let_var [name] = [value]",
+      "grammar_ex_en": "let_var score = 80",
+      "role_ko": "바꿀 수 있는 변수 선언",
+      "role_en": "Mutable variable binding"
+    },
+    "lifecycleScope": {
+      "en": "lifecycle_coroutine_scope",
+      "ko": "수명주기범위"
+    },
+    "lines": {
+      "en": "multiple_text_line",
+      "ko": "한줄문자행들"
+    },
+    "LinkedHashMap": {
+      "en": "hyperlink_url_digest_hash_transform_each",
+      "ko": "연결링크됨고정해시값계산맵"
+    },
+    "LinkedHashSet": {
+      "en": "hyperlink_url_digest_hash_assign_value",
+      "ko": "연결링크됨고정해시값계산집합"
+    },
+    "linkedMapOf": {
+      "en": "hyperlink_url_transform_each_belonging_to",
+      "ko": "연결링크됨맵"
+    },
+    "linkedSetOf": {
+      "en": "hyperlink_url_assign_value_belonging_to",
+      "ko": "연결링크됨집합"
+    },
+    "List": {
+      "en": "item_list_cls",
+      "ko": "목록기능"
+    },
+    "list": {
+      "en": "item_list",
+      "ko": "목록",
+      "synonyms_ko": [
+        "줄목록",
+        "리스트상자",
+        "목록만들기"
+      ],
+      "synonyms_en": [
+        "py_list",
+        "ordered_items"
+      ],
+      "grammar_ko": "목록 [항목들]",
+      "grammar_ex_ko": "과일에 목록 넣기",
+      "grammar_en": "item_list [items]",
+      "grammar_ex_en": "fruits = item_list",
+      "role_ko": "순서대로 담는 목록 상자",
+      "role_en": "Ordered list box"
+    },
+    "listFiles": {
+      "en": "ordered_list_file_collection",
+      "ko": "목록파일목록"
+    },
+    "listOf": {
+      "en": "immutable_list_of",
+      "ko": "불변목록만들기"
+    },
+    "listOfNotNull": {
+      "en": "ordered_list_belonging_to_logical_not_empty_null",
+      "ko": "목록빈값아님"
+    },
+    "LiveData": {
+      "en": "realtime_live_payload_data",
+      "ko": "실시간갱신상태처리데이터자료"
+    },
+    "Long": {
+      "en": "long_number_type",
+      "ko": "긴정수클래스"
+    },
+    "long": {
+      "en": "long_number",
+      "ko": "긴정수"
+    },
+    "LongArray": {
+      "en": "long_number_indexed_list",
+      "ko": "긴정수배열"
+    },
+    "longArrayOf": {
+      "en": "long_number_indexed_list_belonging_to",
+      "ko": "긴정수배열코틀린"
+    },
+    "LongRange": {
+      "en": "long_number_numeric_range",
+      "ko": "긴정수시작끝수치범위"
+    },
+    "lowercase": {
+      "en": "lowercase_text_branch_case",
+      "ko": "소문자로변환분기대소문자"
+    },
+    "Main": {
+      "en": "primary_program_entry_point_cls",
+      "ko": "주실행진입점형"
+    },
+    "Map": {
+      "en": "mapped_values",
+      "ko": "매핑상자형"
+    },
+    "map": {
+      "en": "map_transform",
+      "ko": "하나씩바꾸기",
+      "synonyms_ko": [
+        "모두변환",
+        "맵변환",
+        "일괄변환"
+      ],
+      "synonyms_en": [
+        "convert_each",
+        "transform_all"
+      ],
+      "grammar_ko": "[목록] [변환식] 하나씩바꾸기",
+      "grammar_ex_ko": "점수 하나씩바꾸기",
+      "grammar_en": "[list] map_transform [rule]",
+      "grammar_ex_en": "scores map_transform x * 2",
+      "role_ko": "모든 항목을 규칙대로 한 번에 변환",
+      "role_en": "Transform each item in a collection"
+    },
+    "mapCatching": {
+      "en": "transform_each_handle_error",
+      "ko": "사전매핑변환예외포착처리중"
+    },
+    "mapIndexed": {
+      "en": "transform_each_slot_position",
+      "ko": "맵색인됨"
+    },
+    "mapIndexedNotNull": {
+      "en": "transform_each_slot_position_logical_not_empty_null",
+      "ko": "맵색인됨빈값아님"
+    },
+    "mapLatest": {
+      "en": "transform_each_most_recent",
+      "ko": "사전매핑변환가장최신판"
+    },
+    "mapNotNull": {
+      "en": "map_drop_nulls",
+      "ko": "변환후빈값버리기"
+    },
+    "mapOf": {
+      "en": "immutable_map_of",
+      "ko": "불변대응만들기"
+    },
+    "MatchResult": {
+      "en": "pattern_match_output_outcome",
+      "ko": "패턴일치검사실행반환결과"
+    },
+    "maxByOrNull": {
+      "en": "upper_limit_ordered_by_either_or_empty_null",
+      "ko": "최댓값별또는값없음빈참조"
+    },
+    "maxLines": {
+      "en": "max_input_lines",
+      "ko": "최대입력줄"
+    },
+    "maxOf": {
+      "en": "upper_limit_belonging_to",
+      "ko": "최댓값"
+    },
+    "maxOrNull": {
+      "en": "upper_limit_either_or_empty_null",
+      "ko": "최댓값또는값없음빈참조"
+    },
+    "measureNanoTime": {
+      "en": "measure_size_nanosecond_unit_clock_time",
+      "ko": "요소크기측정나노십억분의일시각"
+    },
+    "measureTimedValue": {
+      "en": "measure_size_bounded_timeout_stored_data",
+      "ko": "요소크기측정제한시간설정됨저장된데이터값"
+    },
+    "measureTimeMillis": {
+      "en": "measure_block_millis",
+      "ko": "블록밀리초측정"
+    },
+    "merge": {
+      "en": "merge_values",
+      "ko": "합침"
+    },
+    "message": {
+      "en": "text_notification_or_packet",
+      "ko": "전달알림메시지"
+    },
+    "minByOrNull": {
+      "en": "lower_limit_ordered_by_either_or_empty_null",
+      "ko": "최솟값별또는값없음빈참조"
+    },
+    "minOf": {
+      "en": "lower_limit_belonging_to",
+      "ko": "최솟값"
+    },
+    "minOrNull": {
+      "en": "lower_limit_either_or_empty_null",
+      "ko": "최솟값또는값없음빈참조"
+    },
+    "minus": {
+      "en": "minus_element_or_list",
+      "ko": "원소또는목록빼기"
+    },
+    "mkdirs": {
+      "en": "create_dir_and_all_parents",
+      "ko": "중간폴더모두생성"
+    },
+    "Modifier": {
+      "en": "chainable_modifier_or_key_cls",
+      "ko": "속성변경수식자형"
+    },
+    "module": {
+      "en": "self_contained_source_file_ko",
+      "ko": "독립코드모듈코틀린"
+    },
+    "Multipart": {
+      "en": "multiple_many_sub_portion",
+      "ko": "다중복합처리전체중부분조각"
+    },
+    "MultipartBody": {
+      "en": "multiple_many_sub_portion_main_body",
+      "ko": "다중전체중부분조각본문주요내용"
+    },
+    "MutableList": {
+      "en": "supports_mutable_ordered_list",
+      "ko": "변경가능순서목록"
+    },
+    "mutableListOf": {
+      "en": "supports_mutable_ordered_list_belonging_to",
+      "ko": "변경가능순서목록생성"
+    },
+    "MutableMap": {
+      "en": "supports_mutable_transform_each",
+      "ko": "변경가능키값맵"
+    },
+    "mutableMapOf": {
+      "en": "supports_mutable_transform_each_belonging_to",
+      "ko": "변경가능키값맵생성"
+    },
+    "MutableSet": {
+      "en": "supports_mutable_assign_value",
+      "ko": "변경가능고유집합"
+    },
+    "mutableSetOf": {
+      "en": "supports_mutable_assign_value_belonging_to",
+      "ko": "변경가능고유집합생성"
+    },
+    "MutableSharedFlow": {
+      "en": "supports_mutable_share_across_async_stream",
+      "ko": "변경가능공유흐름"
+    },
+    "MutableStateFlow": {
+      "en": "supports_mutable_held_state_async_stream",
+      "ko": "변경가능상태흐름"
+    },
+    "mutableStateListOf": {
+      "en": "supports_mutable_held_state_ordered_list_belonging_to",
+      "ko": "변경가능상태목록생성"
+    },
+    "mutableStateMapOf": {
+      "en": "supports_mutable_held_state_transform_each_belonging_to",
+      "ko": "변경가능상태맵생성"
+    },
+    "mutableStateOf": {
+      "en": "supports_mutable_held_state_belonging_to",
+      "ko": "변경가능상태값생성"
+    },
+    "nameWithoutExtension": {
+      "en": "symbol_title_excluding_item_file_extension",
+      "ko": "이름특정항목제외확장자"
+    },
+    "NavController": {
+      "en": "navigation_controller",
+      "ko": "이동제어기"
+    },
+    "NavHost": {
+      "en": "navigation_host_graph",
+      "ko": "이동그래프호스트"
+    },
+    "navigate": {
+      "en": "navigate_to_route",
+      "ko": "경로로이동"
+    },
+    "NavigationBar": {
+      "en": "screen_routing_horizontal_bar",
+      "ko": "화면간경로이동탐색막대패널줄"
+    },
+    "newBuilder": {
+      "en": "create_fresh_fluent_builder",
+      "ko": "새조립기"
+    },
+    "newCall": {
+      "en": "create_fresh_invoke_fn",
+      "ko": "새함수호출실행"
+    },
+    "noinline": {
+      "en": "no_inline_lambda",
+      "ko": "인라인금지람다"
+    },
+    "none": {
+      "en": "none_match",
+      "ko": "소문자없음값"
+    },
+    "notNull": {
+      "en": "logical_not_empty_null",
+      "ko": "빈값아님"
+    },
+    "null": {
+      "en": "null_empty",
+      "ko": "빈상자",
+      "synonyms_ko": [
+        "널값",
+        "빈참조",
+        "비운상자"
+      ],
+      "synonyms_en": [
+        "empty_null",
+        "missing_ref"
+      ],
+      "grammar_ko": "빈상자",
+      "grammar_ex_ko": "대상에 빈상자 넣기",
+      "grammar_en": "null_empty",
+      "grammar_ex_en": "target = null_empty",
+      "role_ko": "빈 객체 참조(null)",
+      "role_en": "Null empty reference"
+    },
+    "NullPointerException": {
+      "en": "empty_null_raw_pointer_caught_fault",
+      "ko": "값없음빈참조메모리주소포인터예외"
+    },
+    "Number": {
+      "en": "numeric_value",
+      "ko": "숫자"
+    },
+    "NumberFormatException": {
+      "en": "numeric_number_apply_format_caught_fault",
+      "ko": "숫자수치값서식예외"
+    },
+    "object": {
+      "en": "object_declaration",
+      "ko": "객체선언"
+    },
+    "observable": {
+      "en": "observable_delegate",
+      "ko": "관찰위임"
+    },
+    "observe": {
+      "en": "attach_listener_for_updates",
+      "ko": "변화감지관찰"
+    },
+    "offset": {
+      "en": "relative_distance_from_start",
+      "ko": "기준거리오프셋"
+    },
+    "OkHttpClient": {
+      "en": "succeeded_web_protocol_client_peer",
+      "ko": "성공웹통신규약요청클라이언트"
+    },
+    "onClick": {
+      "en": "click_callback",
+      "ko": "클릭콜백"
+    },
+    "onCompletion": {
+      "en": "flow_on_completion",
+      "ko": "흐름끝날때"
+    },
+    "onEach": {
+      "en": "side_effect_each",
+      "ko": "각각부수효과"
+    },
+    "onEachIndexed": {
+      "en": "when_event_for_every_one_slot_position",
+      "ko": "발생시각원소마다색인됨"
+    },
+    "onEmpty": {
+      "en": "when_event_has_zero_items",
+      "ko": "발생시비어있음상태"
+    },
+    "onFailure": {
+      "en": "when_event_failed_outcome",
+      "ko": "발생시작업실패상태"
+    },
+    "onStart": {
+      "en": "flow_on_start",
+      "ko": "흐름시작때"
+    },
+    "onSuccess": {
+      "en": "when_event_succeeded",
+      "ko": "발생시성공완료결과"
+    },
+    "onValueChange": {
+      "en": "value_change_callback",
+      "ko": "값변경콜백"
+    },
+    "open": {
+      "en": "open_file",
+      "ko": "파일열기",
+      "synonyms_ko": [
+        "열기",
+        "문서열기",
+        "불러오기"
+      ],
+      "synonyms_en": [
+        "access_file",
+        "load_handle"
+      ],
+      "grammar_ko": "[파일이름] 파일열기",
+      "grammar_ex_ko": "기록 파일열기",
+      "grammar_en": "open_file [filename]",
+      "grammar_ex_en": "open_file data.txt",
+      "role_ko": "파일을 읽거나 쓰기 위해 열기",
+      "role_en": "Open file handle"
+    },
+    "operator": {
+      "en": "operator_overload",
+      "ko": "연산자구현"
+    },
+    "orEmpty": {
+      "en": "either_or_has_zero_items",
+      "ko": "또는비어있음상태"
+    },
+    "out": {
+      "en": "covariant_out",
+      "ko": "공변성"
+    },
+    "OutlinedTextField": {
+      "en": "outlined_text_input",
+      "ko": "테두리글입력"
+    },
+    "outputStream": {
+      "en": "produced_output_data_stream",
+      "ko": "산출출력결과순차데이터스트림"
+    },
+    "overflow": {
+      "en": "text_overflow",
+      "ko": "글자넘침"
+    },
+    "override": {
+      "en": "override_member",
+      "ko": "멤버재정의"
+    },
+    "package": {
+      "en": "namespaced_directory_of_mods",
+      "ko": "모듈패키지묶음"
+    },
+    "padding": {
+      "en": "inner_spacing",
+      "ko": "안쪽간격"
+    },
+    "Pair": {
+      "en": "tuple_holding_two_elements",
+      "ko": "두항목짝쌍"
+    },
+    "param": {
+      "en": "declared_input_parameter",
+      "ko": "매개변수"
+    },
+    "parentFile": {
+      "en": "enclosing_parent_disk_file",
+      "ko": "상위부모요소파일객체"
+    },
+    "Part": {
+      "en": "sub_component_of_larger_item_cls",
+      "ko": "전체중부분조각형"
+    },
+    "partition": {
+      "en": "divide_collection_in_parts",
+      "ko": "기준분할구분"
+    },
+    "PATCH": {
+      "en": "http_partial_update_method_as_uppercase_constant_flag",
+      "ko": "웹부분수정요청메서드상수"
+    },
+    "patch": {
+      "en": "http_partial_update_method",
+      "ko": "웹부분수정요청메서드"
+    },
+    "Path": {
+      "en": "file_path_cls",
+      "ko": "경로형"
+    },
+    "placeholder": {
+      "en": "field_placeholder",
+      "ko": "칸힌트"
+    },
+    "plus": {
+      "en": "plus_element_or_list",
+      "ko": "원소또는목록더하기"
+    },
+    "plusAssign": {
+      "en": "addition_plus_set_value",
+      "ko": "더하기기호값대입할당"
+    },
+    "plusElement": {
+      "en": "addition_plus_item_element",
+      "ko": "더하기기호단일요소원소"
+    },
+    "popBackStack": {
+      "en": "remove_top_step_backward_lifo_or_overlay",
+      "ko": "끝항목꺼내제거이전뒤로가기겹침쌓기스택"
+    },
+    "POST": {
+      "en": "http_submit_create_method_as_uppercase_constant_flag",
+      "ko": "웹데이터전송요청메서드상수"
+    },
+    "post": {
+      "en": "http_submit_create_method",
+      "ko": "웹데이터전송요청메서드"
+    },
+    "PrimaryKey": {
+      "en": "main_accent_lookup_key",
+      "ko": "주핵심기본검색키"
+    },
+    "print": {
+      "en": "print_out",
+      "ko": "출력",
+      "synonyms_ko": [
+        "화면출력",
+        "프린트",
+        "글자찍기",
+        "내보여주기"
+      ],
+      "synonyms_en": [
+        "print_text",
+        "show_result",
+        "display_text"
+      ],
+      "grammar_ko": "[보여줄값] 출력  (예: 점수 출력 / 합격 출력)",
+      "grammar_ex_ko": "합격 출력",
+      "grammar_en": "print_out [value]",
+      "grammar_ex_en": "print_out hello",
+      "role_ko": "화면 출력 (Python/Swift)",
+      "role_en": "Standard output print"
+    },
+    "println": {
+      "en": "print_line",
+      "ko": "줄출력",
+      "synonyms_ko": [
+        "한줄출력",
+        "줄바꿈출력",
+        "프린트라인"
+      ],
+      "synonyms_en": [
+        "line_output",
+        "write_line"
+      ],
+      "grammar_ko": "[내용] 줄출력",
+      "grammar_ex_ko": "합격 줄출력",
+      "grammar_en": "print_line [value]",
+      "grammar_ex_en": "print_line pass",
+      "role_ko": "한 줄 출력 후 줄바꿈 (Kotlin/Java)",
+      "role_en": "Print one line with newline"
+    },
+    "private": {
+      "en": "private_access",
+      "ko": "비공개"
+    },
+    "property": {
+      "en": "getter_setter_backed_field",
+      "ko": "계산개체속성"
+    },
+    "protected": {
+      "en": "subclass_protected",
+      "ko": "하위형보호"
+    },
+    "public": {
+      "en": "public_access",
+      "ko": "공개"
+    },
+    "PUT": {
+      "en": "pickle_op_store_ascii_memo_as_uppercase_constant_flag",
+      "ko": "직렬화문자메모저장상수"
+    },
+    "put": {
+      "en": "pickle_op_store_ascii_memo_ko",
+      "ko": "직렬화문자메모저장코틀린"
+    },
+    "putAll": {
+      "en": "store_item_every_item",
+      "ko": "항목넣어저장모든항목전체"
+    },
+    "Query": {
+      "en": "ask_query",
+      "ko": "질의"
+    },
+    "QueryMap": {
+      "en": "search_query_transform_each",
+      "ko": "질의검색요청사전매핑변환"
+    },
+    "readBytes": {
+      "en": "read_bytes_byte_sequence",
+      "ko": "데이터읽기바이트문자열"
+    },
+    "reader": {
+      "en": "object_reading_text_or_bytes",
+      "ko": "읽기도구"
+    },
+    "readLine": {
+      "en": "read_bytes_text_line_ko",
+      "ko": "데이터읽기한줄문자행코틀린"
+    },
+    "readLines": {
+      "en": "read_bytes_text_line_list",
+      "ko": "데이터읽기한줄문자행들"
+    },
+    "readln": {
+      "en": "read_console_input_line",
+      "ko": "콘솔입력한줄읽기"
+    },
+    "readlnOrNull": {
+      "en": "read_input_line_either_or_empty_null",
+      "ko": "표준입력한줄읽기또는값없음빈참조"
+    },
+    "readText": {
+      "en": "read_bytes_written_text",
+      "ko": "데이터읽기텍스트"
+    },
+    "readTimeout": {
+      "en": "read_bytes_wait_limit",
+      "ko": "데이터읽기제한대기시간"
+    },
+    "recover": {
+      "en": "handle_and_resume_after_err",
+      "ko": "오류발생복구"
+    },
+    "recoverCatching": {
+      "en": "recover_error_handle_error",
+      "ko": "오류발생복구예외포착처리중"
+    },
+    "reduce": {
+      "en": "reduce_one",
+      "ko": "합쳐줄이기",
+      "synonyms_ko": [
+        "모아줄이기",
+        "누적계산",
+        "리듀스"
+      ],
+      "synonyms_en": [
+        "fold_items",
+        "accumulate_all"
+      ],
+      "grammar_ko": "[배열] 합쳐줄이기",
+      "grammar_ex_ko": "점수 합쳐줄이기",
+      "grammar_en": "[array] reduce_one [fn]",
+      "grammar_ex_en": "scores reduce_one add",
+      "role_ko": "여러 항목을 하나로 합쳐 계산",
+      "role_en": "Fold many items into one result"
+    },
+    "reduceOrNull": {
+      "en": "fold_values_either_or_empty_null",
+      "ko": "하나의값으로축약또는값없음빈참조"
+    },
+    "Regex": {
+      "en": "regular_text_pattern_cls",
+      "ko": "정규표현식형"
+    },
+    "reified": {
+      "en": "reified_type_param",
+      "ko": "실체화형인자"
+    },
+    "Relation": {
+      "en": "entity_schema_relationship",
+      "ko": "개체관계연결"
+    },
+    "rememberNavController": {
+      "en": "memoize_ui_state_navigation_coordinator_ctrl",
+      "ko": "상태기억유지탐색이동동작제어관리기"
+    },
+    "rememberSaveable": {
+      "en": "remember_across_process",
+      "ko": "프로세스넘어기억"
+    },
+    "remove": {
+      "en": "remove_item",
+      "ko": "지우기",
+      "synonyms_ko": [
+        "찾아지우기",
+        "항목삭제",
+        "빼버리기"
+      ],
+      "synonyms_en": [
+        "erase_match",
+        "drop_item"
+      ],
+      "grammar_ko": "[목록]에서 [값] 지우기",
+      "grammar_ex_ko": "장바구니에서 사과 지우기",
+      "grammar_en": "[list] remove_item [val]",
+      "grammar_ex_en": "cart remove_item apple",
+      "role_ko": "같은 값 찾아서 지우기",
+      "role_en": "Remove matching item"
+    },
+    "removeAll": {
+      "en": "erase_delete_every_item",
+      "ko": "제거모든"
+    },
+    "removeAt": {
+      "en": "erase_delete_at_spot",
+      "ko": "제거위치"
+    },
+    "removeFirst": {
+      "en": "erase_delete_initial_first",
+      "ko": "제거첫번째"
+    },
+    "removeFirstOrNull": {
+      "en": "erase_delete_initial_first_either_or_empty_null",
+      "ko": "첫번째또는값없음빈참조제거"
+    },
+    "removeLast": {
+      "en": "erase_delete_final_item",
+      "ko": "제거마지막"
+    },
+    "removeLastOrNull": {
+      "en": "erase_delete_final_item_either_or_empty_null",
+      "ko": "마지막또는값없음빈참조제거"
+    },
+    "renameTo": {
+      "en": "change_name_convert_to",
+      "ko": "파일이름변경변환"
+    },
+    "repeat": {
+      "en": "emit_or_run_multiple_times",
+      "ko": "여러번반복실행"
+    },
+    "repeatOnLifecycle": {
+      "en": "repeat_while_lifecycle",
+      "ko": "수명동안반복"
+    },
+    "replaceAfter": {
+      "en": "swap_content_following",
+      "ko": "교체이후시점"
+    },
+    "replaceBefore": {
+      "en": "swap_content_preceding",
+      "ko": "교체이전시점"
+    },
+    "replaceFirst": {
+      "en": "swap_content_initial_first",
+      "ko": "교체첫번째"
+    },
+    "Request": {
+      "en": "send_request",
+      "ko": "요청"
+    },
+    "request": {
+      "en": "outgoing_or_incoming_query",
+      "ko": "요청메시지"
+    },
+    "RequestBody": {
+      "en": "http_request_main_body",
+      "ko": "요청메시지본문주요내용"
+    },
+    "require": {
+      "en": "require_precondition",
+      "ko": "전제조건요구"
+    },
+    "requireNotNull": {
+      "en": "import_module_logical_not_empty_null",
+      "ko": "모듈적재필수확인빈값아님"
+    },
+    "Response": {
+      "en": "got_response_cls",
+      "ko": "응답형"
+    },
+    "Result": {
+      "en": "returned_success_or_err_val_cls",
+      "ko": "실행반환결과형"
+    },
+    "Retrofit": {
+      "en": "declarative_typed_http_client",
+      "ko": "선언형타입안전웹통신틀"
+    },
+    "retry": {
+      "en": "flow_retry",
+      "ko": "흐름다시시도"
+    },
+    "retryWhen": {
+      "en": "attempt_again_match_when",
+      "ko": "실패시다시시도조건분기일치"
+    },
+    "return": {
+      "en": "return_result",
+      "ko": "반환",
+      "synonyms_ko": [
+        "돌려주기",
+        "결과돌려주기",
+        "값내보내기",
+        "리턴"
+      ],
+      "synonyms_en": [
+        "give_back",
+        "send_result",
+        "hand_back"
+      ],
+      "grammar_ko": "[보낼값] 반환  (예: 80 반환 / 합계 반환 / 80 참 반환)",
+      "grammar_ex_ko": "점수 반환",
+      "grammar_en": "return_result [value]",
+      "grammar_ex_en": "return_result score",
+      "role_ko": "함수 결과값 돌려주기",
+      "role_en": "Return result from function"
+    },
+    "reverse": {
+      "en": "reverse_order",
+      "ko": "뒤집기",
+      "synonyms_ko": [
+        "거꾸로뒤집기",
+        "역순정렬",
+        "순서반전"
+      ],
+      "synonyms_en": [
+        "flip_order",
+        "invert_list"
+      ],
+      "grammar_ko": "[목록] 뒤집기",
+      "grammar_ex_ko": "목록 뒤집기",
+      "grammar_en": "[list] reverse_order",
+      "grammar_ex_en": "items reverse_order",
+      "role_ko": "목록 앞뒤 순서 뒤집기",
+      "role_en": "Reverse order of items"
+    },
+    "reversed": {
+      "en": "reversed_copy",
+      "ko": "뒤집힌복사"
+    },
+    "Room": {
+      "en": "android_sqlite_orm_or_chat",
+      "ko": "내장디비또는방"
+    },
+    "routing": {
+      "en": "currently_url_route",
+      "ko": "경로연결라우트중"
+    },
+    "Row": {
+      "en": "table_row",
+      "ko": "가로줄"
+    },
+    "run": {
+      "en": "run_scoped_block",
+      "ko": "범위블록실행"
+    },
+    "runCatching": {
+      "en": "execute_task_handle_error",
+      "ko": "실행시작하기예외포착처리중"
+    },
+    "runningFold": {
+      "en": "is_running_collapse_reduce",
+      "ko": "현재실행중여부접기또는단일값축약"
+    },
+    "runningReduce": {
+      "en": "is_running_fold_values",
+      "ko": "현재실행중여부하나의값으로축약"
+    },
+    "RuntimeException": {
+      "en": "exec_runtime_caught_fault",
+      "ko": "실행시점환경예외"
+    },
+    "sample": {
+      "en": "sample_flow",
+      "ko": "흐름표본"
+    },
+    "Scaffold": {
+      "en": "standard_screen_layout_slot",
+      "ko": "화면기본뼈대틀"
+    },
+    "scan": {
+      "en": "scan_input_ko",
+      "ko": "입력해석코틀린"
+    },
+    "sealed": {
+      "en": "sealed_type_mod",
+      "ko": "봉인형"
+    },
+    "send": {
+      "en": "write_payload_over_socket",
+      "ko": "메시지전송보내기"
+    },
+    "SendChannel": {
+      "en": "transmit_out_comm_channel",
+      "ko": "메시지전송보내기통신전달채널"
+    },
+    "Sequence": {
+      "en": "indexed_iterable_collection_type",
+      "ko": "순번열시퀀스클래스"
+    },
+    "sequence": {
+      "en": "indexed_iterable_collection_ko",
+      "ko": "순번열시퀀스코틀린"
+    },
+    "sequenceOf": {
+      "en": "sequence_of_values",
+      "ko": "값들의지연열"
+    },
+    "SerialName": {
+      "en": "one_by_one_symbol_title",
+      "ko": "직렬순차처리이름명칭"
+    },
+    "Set": {
+      "en": "store_value_or_unique_group",
+      "ko": "집합클래스"
+    },
+    "set": {
+      "en": "unique_set",
+      "ko": "중복없는모음",
+      "synonyms_ko": [
+        "고유집합",
+        "중복제거주머니"
+      ],
+      "synonyms_en": [
+        "distinct_bag",
+        "py_set"
+      ],
+      "grammar_ko": "[목록] 중복없는모음",
+      "grammar_ex_ko": "이름들 중복없는모음",
+      "grammar_en": "unique_set [items]",
+      "grammar_ex_en": "unique_set names",
+      "role_ko": "중복 없는 고유 값 집합",
+      "role_en": "Unique items set"
+    },
+    "setOf": {
+      "en": "immutable_set_of",
+      "ko": "불변집합만들기"
+    },
+    "setparam": {
+      "en": "assign_value_formal_param",
+      "ko": "형식매개변수설정"
+    },
+    "shadow": {
+      "en": "soft_offset_elevation_shadow",
+      "ko": "입체그림자효과"
+    },
+    "shape": {
+      "en": "corner_shape",
+      "ko": "모서리모양"
+    },
+    "SharedFlow": {
+      "en": "shared_hot_flow",
+      "ko": "공유흐름"
+    },
+    "shareIn": {
+      "en": "share_as_shared_flow",
+      "ko": "공유흐름으로공유"
+    },
+    "Short": {
+      "en": "short_number_cls",
+      "ko": "짧은정수형"
+    },
+    "ShortArray": {
+      "en": "short_number_indexed_list",
+      "ko": "짧은정수배열"
+    },
+    "shortArrayOf": {
+      "en": "short_number_indexed_list_belonging_to",
+      "ko": "짧은정수배열코틀린"
+    },
+    "shuffle": {
+      "en": "randomly_reorder_items_list",
+      "ko": "순서무작위섞기"
+    },
+    "shuffled": {
+      "en": "previously_randomize_order",
+      "ko": "순서무작위섞기됨"
+    },
+    "SideEffect": {
+      "en": "adjacent_side_effect",
+      "ko": "모서리측면방향부가효과실행"
+    },
+    "single": {
+      "en": "single_flow_value",
+      "ko": "흐름유일한값"
+    },
+    "singleLine": {
+      "en": "single_line_input",
+      "ko": "한줄입력"
+    },
+    "singleOrNull": {
+      "en": "exactly_one_either_or_empty_null",
+      "ko": "단일한개만또는값없음빈참조"
+    },
+    "size": {
+      "en": "item_size",
+      "ko": "크기",
+      "synonyms_ko": [
+        "전체용량",
+        "컬렉션크기",
+        "사이즈"
+      ],
+      "synonyms_en": [
+        "box_capacity",
+        "total_size"
+      ],
+      "grammar_ko": "[모음] 크기",
+      "grammar_ex_ko": "장바구니 크기",
+      "grammar_en": "[box] item_size",
+      "grammar_ex_en": "cart item_size",
+      "role_ko": "모음·파일 크기 구하기",
+      "role_en": "Size or capacity"
+    },
+    "slice": {
+      "en": "extract_contiguous_portion",
+      "ko": "구간부분자르기"
+    },
+    "snapshotFlow": {
+      "en": "point_in_time_async_stream",
+      "ko": "현재상태스냅샷비동기데이터흐름"
+    },
+    "softWrap": {
+      "en": "text_soft_wrap",
+      "ko": "글자줄바꿈"
+    },
+    "sort": {
+      "en": "sort_items",
+      "ko": "정렬",
+      "synonyms_ko": [
+        "줄세우기",
+        "순서맞추기",
+        "제자리정렬",
+        "나란히정렬"
+      ],
+      "synonyms_en": [
+        "order_in_place",
+        "arrange_items"
+      ],
+      "grammar_ko": "[목록] 정렬  (예: 점수 정렬)",
+      "grammar_ex_ko": "점수 정렬",
+      "grammar_en": "[list] sort_items",
+      "grammar_ex_en": "scores sort_items",
+      "role_ko": "작은 순·가나다순 정렬",
+      "role_en": "Sort items in ascending order"
+    },
+    "sortBy": {
+      "en": "order_in_place_ordered_by",
+      "ko": "순서대로정렬별"
+    },
+    "sorted": {
+      "en": "sorted_copy",
+      "ko": "새로정렬",
+      "synonyms_ko": [
+        "정렬복사",
+        "정렬결과",
+        "차례대로만들기"
+      ],
+      "synonyms_en": [
+        "new_sorted_list",
+        "ordered_copy"
+      ],
+      "grammar_ko": "[목록] 새로정렬",
+      "grammar_ex_ko": "점수 새로정렬",
+      "grammar_en": "sorted_copy [list]",
+      "grammar_ex_en": "sorted_copy scores",
+      "role_ko": "원본 유지하며 새 정렬 목록 만들기",
+      "role_en": "Return a new sorted list"
+    },
+    "sortedBy": {
+      "en": "sort_by_selector",
+      "ko": "고른값으로정렬"
+    },
+    "sortedByDescending": {
+      "en": "sort_by_selector_desc",
+      "ko": "고른값으로내림정렬"
+    },
+    "sortedMapOf": {
+      "en": "ordered_list_transform_each_belonging_to",
+      "ko": "정렬맵"
+    },
+    "sortedSetOf": {
+      "en": "ordered_list_assign_value_belonging_to",
+      "ko": "정렬집합"
+    },
+    "sortedWith": {
+      "en": "ordered_list_using_context",
+      "ko": "정렬포함"
+    },
+    "Spacer": {
+      "en": "expanding_empty_layout_gap_cls",
+      "ko": "유연빈공간채움형"
+    },
+    "startKoin": {
+      "en": "begin_action_kotlin_di",
+      "ko": "시작출발지점코틀린의존주입도구"
+    },
+    "StateFlow": {
+      "en": "held_state_async_stream",
+      "ko": "상태비동기데이터흐름"
+    },
+    "stateIn": {
+      "en": "share_as_state_flow",
+      "ko": "상태흐름으로공유"
+    },
+    "step": {
+      "en": "increment_interval_per_tick",
+      "ko": "단계증감간격"
+    },
+    "Streaming": {
+      "en": "currently_data_stream",
+      "ko": "순차데이터스트림중"
+    },
+    "StringBuilder": {
+      "en": "text_string_fluent_builder",
+      "ko": "문자열조립기"
+    },
+    "subscriptionCount": {
+      "en": "active_listener_item_tally",
+      "ko": "구독연결객체항목개수집계"
+    },
+    "subtract": {
+      "en": "remove_subtrahend_amount",
+      "ko": "차집합빼기"
+    },
+    "sum": {
+      "en": "sum_total",
+      "ko": "총합",
+      "synonyms_ko": [
+        "모두더하기",
+        "합계구하기",
+        "다합치기"
+      ],
+      "synonyms_en": [
+        "add_all_nums",
+        "total_sum"
+      ],
+      "grammar_ko": "[숫자목록] 총합",
+      "grammar_ex_ko": "점수목록 총합",
+      "grammar_en": "sum_total [numbers]",
+      "grammar_ex_en": "sum_total scores",
+      "role_ko": "숫자 목록의 총합 계산",
+      "role_en": "Sum all numbers in list"
+    },
+    "sumOf": {
+      "en": "total_sum_belonging_to",
+      "ko": "전체합계계산"
+    },
+    "super": {
+      "en": "parent_receiver",
+      "ko": "부모수신자"
+    },
+    "supervisorScope": {
+      "en": "supervisor_coroutine_scope",
+      "ko": "감독코루틴범위"
+    },
+    "Suppress": {
+      "en": "suppress_cli_argument_attr_cls",
+      "ko": "명령행속성생성억제형"
+    },
+    "Surface": {
+      "en": "tonal_surface",
+      "ko": "톤있는표면"
+    },
+    "suspend": {
+      "en": "suspend_function",
+      "ko": "중단함수"
+    },
+    "tailrec": {
+      "en": "tail_recursive",
+      "ko": "꼬리재귀"
+    },
+    "take": {
+      "en": "extract_leading_n_items",
+      "ko": "앞부분취하기"
+    },
+    "takeIf": {
+      "en": "take_if_predicate",
+      "ko": "조건이면유지"
+    },
+    "takeUnless": {
+      "en": "take_unless_predicate",
+      "ko": "조건아니면유지"
+    },
+    "Text": {
+      "en": "plain_text",
+      "ko": "글"
+    },
+    "textAlign": {
+      "en": "text_alignment",
+      "ko": "글자정렬"
+    },
+    "TextField": {
+      "en": "plain_text_input_cls",
+      "ko": "글입력칸"
+    },
+    "this": {
+      "en": "current_receiver",
+      "ko": "현재수신자"
+    },
+    "throw": {
+      "en": "throw_error",
+      "ko": "던지기"
+    },
+    "Throws": {
+      "en": "multiple_raise_exception_cls",
+      "ko": "오류예외던지기들형"
+    },
+    "to": {
+      "en": "target_destination_to",
+      "ko": "변환"
+    },
+    "toBoolean": {
+      "en": "convert_to_truth_flag",
+      "ko": "변환참거짓논리형"
+    },
+    "toByte": {
+      "en": "convert_to_eight_bit_byte",
+      "ko": "변환바이트"
+    },
+    "toChar": {
+      "en": "convert_to_single_char",
+      "ko": "변환한글자문자형"
+    },
+    "TODO": {
+      "en": "unimplemented_todo",
+      "ko": "미구현표시상수"
+    },
+    "toDouble": {
+      "en": "convert_to_double_float",
+      "ko": "변환배정밀실수"
+    },
+    "toDoubleOrNull": {
+      "en": "convert_to_double_float_either_or_empty_null",
+      "ko": "변환배정밀실수또는값없음빈참조"
+    },
+    "toFloat": {
+      "en": "convert_to_decimal_number",
+      "ko": "변환실수"
+    },
+    "toFloatOrNull": {
+      "en": "convert_to_decimal_number_either_or_empty_null",
+      "ko": "변환실수또는값없음빈참조"
+    },
+    "toHashSet": {
+      "en": "convert_to_digest_hash_assign_value",
+      "ko": "변환고정해시값계산집합"
+    },
+    "toInt": {
+      "en": "convert_to_whole_integer",
+      "ko": "변환정수형"
+    },
+    "toIntArray": {
+      "en": "convert_to_whole_integer_indexed_list",
+      "ko": "변환정수형배열"
+    },
+    "toIntOrNull": {
+      "en": "convert_to_whole_integer_either_or_empty_null",
+      "ko": "변환정수형또는값없음빈참조"
+    },
+    "toList": {
+      "en": "flow_to_list",
+      "ko": "흐름을목록으로"
+    },
+    "toLong": {
+      "en": "convert_to_long_number",
+      "ko": "변환긴정수"
+    },
+    "toLongArray": {
+      "en": "convert_to_long_number_indexed_list",
+      "ko": "변환긴정수배열"
+    },
+    "toLongOrNull": {
+      "en": "convert_to_long_number_either_or_empty_null",
+      "ko": "변환긴정수또는값없음빈참조"
+    },
+    "toMap": {
+      "en": "copy_to_map",
+      "ko": "대응으로복사"
+    },
+    "toMutableList": {
+      "en": "copy_to_mutable_list",
+      "ko": "가변목록으로복사"
+    },
+    "toMutableMap": {
+      "en": "convert_to_supports_mutable_transform_each",
+      "ko": "변경가능맵변환"
+    },
+    "toMutableSet": {
+      "en": "convert_to_supports_mutable_assign_value",
+      "ko": "변경가능집합변환"
+    },
+    "TopAppBar": {
+      "en": "upper_top_application_horizontal_bar",
+      "ko": "상단응용프로그램막대"
+    },
+    "toSet": {
+      "en": "copy_to_set",
+      "ko": "집합으로복사"
+    },
+    "toShort": {
+      "en": "convert_to_short_number",
+      "ko": "변환짧은정수"
+    },
+    "toTypedArray": {
+      "en": "convert_to_has_static_type_indexed_list",
+      "ko": "변환자료형지정됨배열"
+    },
+    "Transaction": {
+      "en": "all_or_nothing_db_unit_cls",
+      "ko": "원자적거래단위형"
+    },
+    "transform": {
+      "en": "rotate_scale_or_map_stream",
+      "ko": "형태변형변환"
+    },
+    "transformLatest": {
+      "en": "shape_transform_most_recent",
+      "ko": "형태변형변환가장최신판"
+    },
+    "trimIndent": {
+      "en": "strip_spaces_shift_right",
+      "ko": "앞뒤공백자르기오른쪽들여쓰기"
+    },
+    "trimMargin": {
+      "en": "strip_spaces_outer_spacing",
+      "ko": "앞뒤공백자르기바깥여백공간"
+    },
+    "Triple": {
+      "en": "group_of_three_items",
+      "ko": "삼중세쌍"
+    },
+    "true": {
+      "en": "bool_true",
+      "ko": "참",
+      "synonyms_ko": [
+        "맞음",
+        "트루",
+        "진실값"
+      ],
+      "synonyms_en": [
+        "yes_true",
+        "correct_flag"
+      ],
+      "grammar_ko": "참  (조건이나 상태 값에 사용)",
+      "grammar_ex_ko": "합격에 참 넣기",
+      "grammar_en": "bool_true",
+      "grammar_ex_en": "passed = bool_true",
+      "role_ko": "논리 참(맞다) 값",
+      "role_en": "Boolean true value"
+    },
+    "try": {
+      "en": "try_safely",
+      "ko": "시도",
+      "synonyms_ko": [
+        "안전시도",
+        "오류감시시작",
+        "해보기"
+      ],
+      "synonyms_en": [
+        "attempt_safely",
+        "watch_errors"
+      ],
+      "grammar_ko": "시도 [위험할수있는일]",
+      "grammar_ex_ko": "시도 파일열기",
+      "grammar_en": "try_safely [steps]",
+      "grammar_ex_en": "try_safely open_file",
+      "role_ko": "오류가 날 수 있는 작업 감싸서 실행",
+      "role_en": "Try block guarding possible errors"
+    },
+    "tryEmit": {
+      "en": "attempt_try_trigger_event",
+      "ko": "오류감시시도신호사건방출"
+    },
+    "trySend": {
+      "en": "attempt_try_transmit_out",
+      "ko": "오류감시시도메시지전송보내기"
+    },
+    "typealias": {
+      "en": "declare_alternative_type_name_ko",
+      "ko": "자료형대체별칭선언코틀린"
+    },
+    "TypeConverter": {
+      "en": "value_type_format_mapper",
+      "ko": "자료형데이터형변환기"
+    },
+    "typeof": {
+      "en": "infer_type_of_expression",
+      "ko": "표현식자료형추론"
+    },
+    "union": {
+      "en": "either_type_or_set_merge",
+      "ko": "합집합공용형"
+    },
+    "Unit": {
+      "en": "empty_void_or_base_unit",
+      "ko": "단위빈반환형"
+    },
+    "until": {
+      "en": "continue_while_not_reached",
+      "ko": "지정조건까지"
+    },
+    "unzip": {
+      "en": "unpack_compressed_entries",
+      "ko": "압축파일풀기"
+    },
+    "Update": {
+      "en": "apply_new_values_to_target_cls",
+      "ko": "최신값으로수정갱신형"
+    },
+    "update": {
+      "en": "update_state_atomically",
+      "ko": "상태원자갱신"
+    },
+    "uppercase": {
+      "en": "convert_text_to_capitals",
+      "ko": "모두대문자"
+    },
+    "Url": {
+      "en": "uniform_resource_locator_str_type",
+      "ko": "웹자원위치주소클래스"
+    },
+    "url": {
+      "en": "uniform_resource_locator_str",
+      "ko": "웹자원위치주소"
+    },
+    "use": {
+      "en": "license_usage_clause",
+      "ko": "사용행위단어상수"
+    },
+    "useLines": {
+      "en": "utilize_item_text_line_list",
+      "ko": "기능사용적용한줄문자행들"
+    },
+    "val": {
+      "en": "val_fixed",
+      "ko": "고정값",
+      "synonyms_ko": [
+        "읽기전용값",
+        "발상수",
+        "불변값"
+      ],
+      "synonyms_en": [
+        "read_only_val",
+        "kotlin_val"
+      ],
+      "grammar_ko": "고정값 [이름]에 [값] 넣기",
+      "grammar_ex_ko": "고정값 이름에 철수 넣기",
+      "grammar_en": "val_fixed [name] = [value]",
+      "grammar_ex_en": "val_fixed title = hello",
+      "role_ko": "한 번 정하면 못 바꾸는 값 (Kotlin)",
+      "role_en": "Read-only value binding"
+    },
+    "value": {
+      "en": "value_class_mod",
+      "ko": "값클래스"
+    },
+    "values": {
+      "en": "multiple_stored_data",
+      "ko": "저장된데이터값들"
+    },
+    "var": {
+      "en": "var_slot",
+      "ko": "자유변수",
+      "synonyms_ko": [
+        "바변수",
+        "일반상자",
+        "유동변수"
+      ],
+      "synonyms_en": [
+        "general_var",
+        "open_variable"
+      ],
+      "grammar_ko": "자유변수 [이름]에 [값] 넣기",
+      "grammar_ex_ko": "자유변수 횟수에 0 넣기",
+      "grammar_en": "var_slot [name] = [value]",
+      "grammar_ex_en": "var_slot count = 0",
+      "role_ko": "일반 변수 상자 선언",
+      "role_en": "General variable declaration"
+    },
+    "vararg": {
+      "en": "variable_length_argument_list",
+      "ko": "가변길이매개변수선언"
+    },
+    "VerticalDivider": {
+      "en": "vertical_rule",
+      "ko": "세로구분선"
+    },
+    "vetoable": {
+      "en": "vetoable_delegate",
+      "ko": "거부가능위임"
+    },
+    "ViewModel": {
+      "en": "display_view_data_model",
+      "ko": "화면표시뷰데이터모델구조"
+    },
+    "viewModel": {
+      "en": "obtain_screen_model",
+      "ko": "화면모델얻기"
+    },
+    "viewModelScope": {
+      "en": "screen_model_scope",
+      "ko": "화면모델범위"
+    },
+    "walk": {
+      "en": "visit_directories_recursively",
+      "ko": "계층폴더순회"
+    },
+    "walkBottomUp": {
+      "en": "traverse_tree_lower_edge_upward",
+      "ko": "계층폴더순회하단위쪽방향올림"
+    },
+    "walkTopDown": {
+      "en": "traverse_tree_upper_top_downward",
+      "ko": "계층폴더순회상단아래방향눌림"
+    },
+    "weight": {
+      "en": "flex_weight_in_row",
+      "ko": "가중치나누기"
+    },
+    "when": {
+      "en": "when_expression",
+      "ko": "때맞춤식"
+    },
+    "where": {
+      "en": "locate_or_filter_by_mask",
+      "ko": "조건위치선별"
+    },
+    "while": {
+      "en": "while_loop",
+      "ko": "동안",
+      "synonyms_ko": [
+        "동안반복",
+        "계속반복",
+        "조건반복",
+        "하는동안",
+        "와일문"
+      ],
+      "synonyms_en": [
+        "keep_looping",
+        "as_long_as",
+        "until_stop"
+      ],
+      "grammar_ko": "[조건] 동안 반복 [할일]",
+      "grammar_ex_ko": "점수 10 미만 동안",
+      "grammar_en": "while_loop [condition]",
+      "grammar_ex_en": "while_loop score < 10",
+      "role_ko": "조건이 참인 동안 계속 반복",
+      "role_en": "While condition remains true loop"
+    },
+    "width": {
+      "en": "horizontal_pixel_or_char_span",
+      "ko": "가로너비폭"
+    },
+    "windowed": {
+      "en": "sliding_windows",
+      "ko": "미닫이창"
+    },
+    "with": {
+      "en": "with_scoped_receiver",
+      "ko": "수신자와함께"
+    },
+    "withContext": {
+      "en": "switch_coroutine_context",
+      "ko": "코루틴문맥바꾸기"
+    },
+    "withIndex": {
+      "en": "using_context_slot_position",
+      "ko": "포함색인"
+    },
+    "withTimeout": {
+      "en": "using_context_wait_limit",
+      "ko": "포함제한시간"
+    },
+    "withTimeoutOrNull": {
+      "en": "using_context_wait_limit_either_or_empty_null",
+      "ko": "포함제한시간또는값없음빈참조"
+    },
+    "wrapContentSize": {
+      "en": "line_wrap_inner_payload_byte_or_count",
+      "ko": "줄바꿈감싸기내부본문내용용량크기"
+    },
+    "writeBytes": {
+      "en": "write_bytes_byte_sequence",
+      "ko": "데이터기록쓰기바이트문자열"
+    },
+    "writer": {
+      "en": "object_formatting_output_rows",
+      "ko": "쓰기도구"
+    },
+    "writeText": {
+      "en": "write_bytes_written_text",
+      "ko": "데이터기록쓰기텍스트"
+    },
+    "writeTimeout": {
+      "en": "write_bytes_wait_limit",
+      "ko": "데이터기록쓰기제한대기시간"
+    },
+    "yield": {
+      "en": "yield_sequence_value",
+      "ko": "지연열값넘기기"
+    },
+    "yieldAll": {
+      "en": "yield_sequence_all",
+      "ko": "지연열모두넘기기"
+    },
+    "zip": {
+      "en": "zip_flows",
+      "ko": "흐름짝짓기"
+    },
+    "zipWithNext": {
+      "en": "pair_or_archive_using_context_following",
+      "ko": "집압축포함다음단계"
+    }
+  }
+}

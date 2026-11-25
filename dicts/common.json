@@ -1,0 +1,140 @@
+{
+  "_meta": {
+    "language": "common",
+    "version": "0.3.0",
+    "description": "Disjoint 1:N natural canonical + synonym mappings (v0.3)",
+    "entry_count": 6
+  },
+  "entries": {
+    "else": {
+      "en": "otherwise_else",
+      "ko": "아니면",
+      "synonyms_ko": [
+        "그밖에",
+        "그렇지않으면",
+        "나머지경우",
+        "안맞으면"
+      ],
+      "synonyms_en": [
+        "fallback_else",
+        "if_not_so",
+        "or_else"
+      ],
+      "grammar_ko": "아니면 [할일]  (만약 줄 바로 다음 줄에 적기)",
+      "grammar_ex_ko": "아니면 불합격 출력",
+      "grammar_en": "otherwise_else [action]  (after an if block)",
+      "grammar_ex_en": "otherwise_else print fail",
+      "role_ko": "조건이 모두 아닐 때",
+      "role_en": "Fallback branch when condition is false"
+    },
+    "for": {
+      "en": "repeat_loop",
+      "ko": "반복",
+      "synonyms_ko": [
+        "하나씩반복",
+        "차례반복",
+        "횟수반복",
+        "목록순회",
+        "포문"
+      ],
+      "synonyms_en": [
+        "loop_each",
+        "iterate_each",
+        "each_item",
+        "repeat_times"
+      ],
+      "grammar_ko": "[목록] 하나씩 꺼내 [할일]  또는  [횟수]번 반복",
+      "grammar_ex_ko": "점수 5번 반복",
+      "grammar_en": "repeat_loop each item in [list]",
+      "grammar_ex_en": "repeat_loop 5 times",
+      "role_ko": "목록이나 횟수만큼 반복",
+      "role_en": "For loop over items or count"
+    },
+    "if": {
+      "en": "if_when",
+      "ko": "만약",
+      "synonyms_ko": [
+        "만일",
+        "조건이면",
+        "받는다면",
+        "입력된다면",
+        "일때",
+        "조건문"
+      ],
+      "synonyms_en": [
+        "when_if",
+        "suppose_if",
+        "condition_check",
+        "in_case"
+      ],
+      "grammar_ko": "만약 [대상] [비교값] [이상/이하/같음]이면 [할일]  (예: 만약 점수 80 이상이면 합격 출력)",
+      "grammar_ex_ko": "만약 점수 80 이상이면 합격 출력",
+      "grammar_en": "if_when [target] >= [value] then [action]",
+      "grammar_ex_en": "when score >= 80 print pass",
+      "role_ko": "조건 분기 시작",
+      "role_en": "Conditional branch"
+    },
+    "return": {
+      "en": "return_result",
+      "ko": "반환",
+      "synonyms_ko": [
+        "돌려주기",
+        "결과돌려주기",
+        "값내보내기",
+        "리턴"
+      ],
+      "synonyms_en": [
+        "give_back",
+        "send_result",
+        "hand_back"
+      ],
+      "grammar_ko": "[보낼값] 반환  (예: 80 반환 / 합계 반환 / 80 참 반환)",
+      "grammar_ex_ko": "점수 반환",
+      "grammar_en": "return_result [value]",
+      "grammar_ex_en": "return_result score",
+      "role_ko": "함수 결과값 돌려주기",
+      "role_en": "Return result from function"
+    },
+    "try": {
+      "en": "try_safely",
+      "ko": "시도",
+      "synonyms_ko": [
+        "안전시도",
+        "오류감시시작",
+        "해보기"
+      ],
+      "synonyms_en": [
+        "attempt_safely",
+        "watch_errors"
+      ],
+      "grammar_ko": "시도 [위험할수있는일]",
+      "grammar_ex_ko": "시도 파일열기",
+      "grammar_en": "try_safely [steps]",
+      "grammar_ex_en": "try_safely open_file",
+      "role_ko": "오류가 날 수 있는 작업 감싸서 실행",
+      "role_en": "Try block guarding possible errors"
+    },
+    "while": {
+      "en": "while_loop",
+      "ko": "동안",
+      "synonyms_ko": [
+        "동안반복",
+        "계속반복",
+        "조건반복",
+        "하는동안",
+        "와일문"
+      ],
+      "synonyms_en": [
+        "keep_looping",
+        "as_long_as",
+        "until_stop"
+      ],
+      "grammar_ko": "[조건] 동안 반복 [할일]",
+      "grammar_ex_ko": "점수 10 미만 동안",
+      "grammar_en": "while_loop [condition]",
+      "grammar_ex_en": "while_loop score < 10",
+      "role_ko": "조건이 참인 동안 계속 반복",
+      "role_en": "While condition remains true loop"
+    }
+  }
+}
