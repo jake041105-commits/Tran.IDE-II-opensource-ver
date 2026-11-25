@@ -1,0 +1,45 @@
+Tran.IDE II — Bidirectional 1:1 Natural Language <-> Code IDE
+🄯 (c)카피레프트 Copyleft — Tran.IDE
+Copyright (C) 2026 Bakk jaejin (a Bakk jaejin production)
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+Full verbatim license text is provided in the LICENSE file.
+
+============================================================================
+Third-Party Software & Bundled Asset Notices
+============================================================================
+
+1. Monaco Editor (`ui/vendor/monaco-editor`)
+   - License: MIT License
+   - Copyright (c) Microsoft Corporation
+
+2. Python Dependencies (`requirements.txt`)
+   - pywebview (BSD-3-Clause License)
+   - pythonnet (MIT License)
+   - bottle (MIT License)
+   - clr_loader (MIT License)
+   - proxy_tools (MIT License)
+   - cffi (MIT License)
+   - pycparser (BSD-3-Clause License)
+   - typing_extensions (PSF-2.0 License)
+
+3. Optional Runtimes Bundled by `scripts/build_installer.py`
+   When building the full Windows installer (`Setup.exe`) or portable package:
+   - Python Embeddable Distribution (PSF License Agreement)
+   - Node.js (MIT License)
+   - TinyCC / tcc (GNU Lesser General Public License v2.1)
+   - Eclipse Temurin OpenJDK (GNU General Public License v2.0 with Classpath Exception)
+   - Kotlin Compiler (Apache License 2.0)

@@ -1,7 +1,14 @@
 # ============================================================================
+#   Tran.IDE II — Bidirectional 1:1 Natural Language <-> Code IDE
 #   🄯 (c)카피레프트 Copyleft — Tran.IDE
-#   a Bakk jaejin production
-#   Licensed under the GNU Affero General Public License v3.0 (AGPL-3.0)
+#   Copyright (C) 2026 Bakk jaejin (a Bakk jaejin production)
+#
+#   SPDX-License-Identifier: AGPL-3.0-or-later
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU Affero General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#   See the LICENSE and NOTICE files or <https://www.gnu.org/licenses/>.
 # ============================================================================
 """Build Tran.IDE II portable payload (with optional multi-language runtimes), launcher exe, and Inno Setup installer."""
 from __future__ import annotations
@@ -142,6 +149,8 @@ def copy_app_files(payload: Path) -> None:
         shutil.copy2(ROOT / name, payload / name)
     if (ROOT / "LICENSE").exists():
         shutil.copy2(ROOT / "LICENSE", payload / "LICENSE.txt")
+    if (ROOT / "NOTICE").exists():
+        shutil.copy2(ROOT / "NOTICE", payload / "NOTICE")
 
     ui_dest = payload / "ui"
     if ui_dest.exists():
@@ -352,7 +361,6 @@ if __name__ == "__main__":
     main()
 
 # ============================================================================
-#   🄯 (c)카피레프트 Copyleft — Tran.IDE
-#   a Bakk jaejin production
-#   Licensed under the GNU Affero General Public License v3.0 (AGPL-3.0)
+#   🄯 (c)카피레프트 Copyleft — Tran.IDE | a Bakk jaejin production
+#   Copyright (C) 2026 Bakk jaejin | SPDX-License-Identifier: AGPL-3.0-or-later
 # ============================================================================

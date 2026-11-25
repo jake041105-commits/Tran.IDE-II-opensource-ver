@@ -2,9 +2,16 @@
 chcp 65001 >nul
 setlocal
 REM ============================================================================
+REM   Tran.IDE II — Bidirectional 1:1 Natural Language <-> Code IDE
 REM   🄯 (c)카피레프트 Copyleft — Tran.IDE
-REM   a Bakk jaejin production
-REM   Licensed under the GNU Affero General Public License v3.0 (AGPL-3.0)
+REM   Copyright (C) 2026 Bakk jaejin (a Bakk jaejin production)
+REM
+REM   SPDX-License-Identifier: AGPL-3.0-or-later
+REM   This program is free software: you can redistribute it and/or modify
+REM   it under the terms of the GNU Affero General Public License as published by
+REM   the Free Software Foundation, either version 3 of the License, or
+REM   (at your option) any later version.
+REM   See the LICENSE and NOTICE files or <https://www.gnu.org/licenses/>.
 REM ============================================================================
 
 set "APP_DIR=%~dp0"

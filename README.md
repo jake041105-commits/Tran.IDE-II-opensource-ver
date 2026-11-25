@@ -1,93 +1,99 @@
+**English** | [한국어](README.ko.md)
+
 # Tran.IDE II (v0.12)
 
 > **🄯 (c)카피레프트 Copyleft — Tran.IDE | a Bakk jaejin production**  
-> **1:1 양방향 자연어 ↔ 코드 통합 개발 환경 (Bidirectional 1:1 Natural Language ↔ Code IDE)**
+> **Bidirectional 1:1 Natural Language ↔ Code IDE**
 
 ---
 
-## 개요 (Overview)
+## Overview
 
-**Tran.IDE II**는 기존 프로그래밍 언어의 원문 코드(RAW Code)를 영어 자연어(`EN Natural`) 및 한국어(`KO Korean`)와 **1:1 배타적 매핑**으로 상호 변환하며 편집·실행·오류 진단할 수 있는 데스크톱 IDE입니다.
+**Tran.IDE II** is a desktop integrated development environment that bidirectionally translates standard source code (`RAW Code`) to and from English natural phrasing (`EN Natural`) and Korean (`KO Korean`) using **exclusive 1:1 mappings**.
 
-코드의 기호(`()`, `{}`, `:`, `;`)나 영문 키워드를 외우지 않아도 자연어 어순으로 코드를 작성하고, 반대로 기존 소스 코드를 불러와 자연어 문장 요약으로 해석할 수 있습니다.
-
----
-
-## 주요 기능 (Key Features)
-
-- **3단 표시/편집 모드 (`RAW Code` / `EN Natural` / `KO Korean`)**:
-  - 주석과 문자열 리터럴을 보호하면서 키워드 및 식별자를 자연어로 마스킹/역컴파일하고, 자연어 입력을 원문 코드로 컴파일합니다.
-- **7개 언어 실행 & 자연어 줄 에러 진단 (7-Language Runner & Error Highlighting)**:
-  - Python, JavaScript, TypeScript(오프라인 내장 `tsWorker.js`), C, Java, Kotlin, Swift 실행을 지원합니다.
-  - 컴파일/런타임 오류 발생 시 원문 줄 번호를 자연어 에디터 줄로 역매핑하여 **빨간 에러 하이라이트와 한국어/영어 원인 요약**을 바로 표시합니다.
-- **배타적 1:1 매칭 사전 (`매칭사전`) & 빠른 코드 검색 (`Quick Code Search`)**:
-  - 각 코드 토큰당 고유한 대표 자연어 및 배타적 동의어 묶음을 제공합니다.
-- **문장 코딩 & 코드 요약 (`Sentence Composer & Code Summarizer`)**:
-  - 값 담기, 조건문(`만약 ~이면`), 연속 파이프라인(`골라서 정렬하고 파일저장`), 반복문(`하나씩`, `N번 반복`, `동안`) 등 한국어/영어 어순 문장으로 코드를 생성하고 코드 줄을 자연어로 요약합니다.
-- **오프라인 품사 태깅 어휘 DB (`dicts/vocab_ko.json`, `dicts/vocab_en.json`)**:
-  - 네트워크 연결 없이도 로컬에서 자연어-코드 검증 및 자동완성을 수행합니다.
+You can write executable programs using natural-language word order without memorizing syntax symbols (`()`, `{}`, `:`, `;`), or open existing source files and inspect them as readable natural-language lines and sentence summaries.
 
 ---
 
-## 설치 및 실행 (Installation & Usage)
+## Key Features
 
-### 방법 1. 일반 사용자 — 인스톨러(`Setup.exe`)로 간편 설치 (권장)
-별도 환경 설정 없이 한 번에 설치하고 `Tran.IDE II.exe`로 바로 실행할 수 있습니다.
-1. GitHub **Releases** 페이지에서 **`Tran.IDE_II_v0.12_Setup.exe`**(또는 무설치 `Tran.IDE_II_v0.12_Portable.zip`)를 다운로드합니다.
-2. 설치 마법사를 실행하면 **Python, Node.js(JS/TS), TinyCC(C), OpenJDK(Java), Kotlin, WebView2** 런타임이 함께 구성됩니다.
-3. (선택) Swift 실행이 필요한 경우 설치 단계의 **"Install Swift for Windows toolchain via winget"** 체크박스를 선택하거나 별도로 Swift for Windows를 설치합니다.
+- **3-Mode Dual-Buffer Editor (`RAW Code` / `EN Natural` / `KO Korean`)**:
+  - Masks and decompiles code keywords and identifiers into natural language while protecting comments and string literals, and compiles natural-language edits back into valid source code.
+- **7-Language Execution & Natural-Line Error Highlighting**:
+  - Executes **Python, JavaScript, TypeScript** (via offline bundled Monaco `tsWorker.js`), **C, Java, Kotlin, and Swift**.
+  - Maps compiler and runtime `stderr` line numbers back onto the corresponding natural-language editor line, displaying inline highlights, localized diagnostic summaries, and full raw error tooltips.
+- **Exclusive 1:1 Matching Dictionary & Quick Code Search**:
+  - Enforces conflict-free 1:1 mapping where each code token owns a unique canonical natural word and exclusive synonym bundle.
+- **Natural Sentence Composer & Code Summarizer**:
+  - Builds code from Korean/English word-order templates (assignments, conditionals, filter/sort/save pipelines, loops) and explains existing code line-by-line in plain sentences.
+- **Offline POS Vocabulary Database (`dicts/vocab_ko.json`, `dicts/vocab_en.json`)**:
+  - Validates natural-language tokens and provides offline autocomplete without requiring an internet connection.
 
-### 방법 2. 개발자 / 소스 클론 바로 실행 (`run_tran_ide.bat`)
-1. 저장소를 내려받습니다.
-2. **`run_tran_ide.bat`** 파일을 더블클릭하면 최초 1회 `.venv` 생성 및 `requirements.txt` 패키지 설치 후 자동으로 `Tran.IDE II`가 실행됩니다.
-   *(또는 수동 실행: `python -m venv .venv` → `.venv\Scripts\activate` → `pip install -r requirements.txt` → `python main.py`)*
+---
 
-### 방법 3. 인스톨러 & 실행 파일(`.exe`) 직접 빌드
-Windows 환경에서 **`build_installer.bat`** 을 더블클릭하거나 아래 명령어를 실행하면 `dist/` 폴더에 **`Tran.IDE_II_v0.12_Setup.exe`** 와 **`Tran.IDE_II_v0.12_Portable.zip`** 이 자동 생성됩니다.
+## Installation & Usage
+
+### Option 1. End Users — Windows Installer (`Setup.exe`, Recommended)
+Run everything out of the box without manual environment setup:
+1. Download **`Tran.IDE_II_v0.12_Setup.exe`** (or the portable **`Tran.IDE_II_v0.12_Portable.zip`**) from the GitHub **Releases** page.
+2. Run the setup wizard — it bundles **Python, Node.js (JS/TS), TinyCC (C), Eclipse Temurin OpenJDK (Java), Kotlin Compiler, and Microsoft Edge WebView2**.
+3. *(Optional)* To run **Swift** on Windows, check **"Install Swift for Windows toolchain via winget"** during setup or install Swift for Windows separately.
+
+### Option 2. Developers — Run from Source (`run_tran_ide.bat`)
+1. Clone this repository.
+2. Double-click **`run_tran_ide.bat`**. On first launch it automatically creates `.venv`, installs dependencies from `requirements.txt`, and starts `Tran.IDE II`.
+   *(Or run manually: `python -m venv .venv` → `.venv\Scripts\activate` → `pip install -r requirements.txt` → `python main.py`)*
+
+### Option 3. Build Your Own Installer & `.exe` Launcher
+On Windows, double-click **`build_installer.bat`** or run one of the commands below to generate **`Tran.IDE_II_v0.12_Setup.exe`** and **`Tran.IDE_II_v0.12_Portable.zip`** inside `dist/`:
 
 ```bash
-# 전체 포터블 런타임(Python, Node.js, TinyCC, OpenJDK, Kotlin) 포함 인스톨러 빌드
+# Full build with bundled portable runtimes (Python, Node.js, TinyCC, OpenJDK, Kotlin)
 python scripts/build_installer.py
 
-# Python 전용 경량 인스톨러 빌드
+# Lightweight Python-only installer
 python scripts/build_installer.py --lite
 
-# 현재 소스와 함께 쓸 Tran.IDE II.exe 런처만 컴파일
+# Compile only the native Tran.IDE II.exe launcher in the repository root
 python scripts/build_installer.py --launcher-only
 ```
 
 ---
 
-## 프로젝트 구조 (Project Structure)
+## Project Structure
 
 ```text
 .
-├── main.py                        # pywebview 브릿지 API, 7개 언어 실행기 & 에러 진단, 앱 진입점
-├── dict_manager.py                # 언어 카트리지 및 1:1 양방향 사전 로더
-├── run_tran_ide.bat               # Windows 원클릭 자동 세팅 & 실행 런처
-├── build_installer.bat            # Windows 원클릭 인스톨러(.exe / Setup.exe) 빌더 실행기
-├── requirements.txt               # Python 의존성 목록
-├── LICENSE                        # GNU Affero General Public License v3.0 (AGPL-3.0)
-├── CONTRIBUTING.md                # 기여 가이드
+├── main.py                        # pywebview bridge API, 7-language runner & error parser, app entrypoint
+├── dict_manager.py                # Language cartridge loader & 1:1 bidirectional dictionary manager
+├── run_tran_ide.bat               # Windows one-click auto-setup & launch script
+├── build_installer.bat            # Windows one-click Setup.exe & portable package builder
+├── requirements.txt               # Python package dependencies
+├── LICENSE                        # Verbatim GNU Affero General Public License v3.0 (AGPL-3.0)
+├── NOTICE                         # Copyright, copyleft attribution, and third-party notices
+├── CONTRIBUTING.md                # Contribution guidelines
+├── README.md                      # English README (default)
+├── README.ko.md                   # Korean README
 ├── scripts/
-│   └── build_installer.py         # 포터블 런타임 내장 인스톨러 & Tran.IDE II.exe 자동 빌더
+│   └── build_installer.py         # Portable runtime bundler & Inno Setup release builder
 ├── installer/
-│   ├── launcher.cs                # 네이티브 Windows 실행 런처 (Tran.IDE II.exe)
-│   └── TranIDE2.iss               # Inno Setup 인스톨러 스크립트
+│   ├── launcher.cs                # Native Windows launcher executable source (Tran.IDE II.exe)
+│   └── TranIDE2.iss               # Inno Setup installer script
 ├── .github/workflows/
-│   └── release.yml                # GitHub Actions 자동 빌드 및 Releases 배포 워크플로우
-├── ui/                            # 프론트엔드 UI (index.html, app.js, style.css, Monaco Editor)
-└── dicts/                         # 7개 언어 카트리지 및 오프라인 KO/EN 어휘 DB
+│   └── release.yml                # GitHub Actions automated Windows release workflow
+├── ui/                            # Frontend UI (index.html, app.js, style.css, bundled Monaco Editor)
+└── dicts/                         # 7-language cartridges & offline KO/EN vocabulary DBs
 ```
 
 ---
 
-## 라이선스 (License)
+## License
 
-이 프로젝트는 **GNU Affero General Public License v3.0 (AGPL-3.0)** 라이선스 하에 배포됩니다.  
-자세한 내용은 [LICENSE](LICENSE) 파일을 참고하세요.
+This program is free software: you can redistribute it and/or modify it under the terms of the **GNU Affero General Public License** as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+See [LICENSE](LICENSE) for the full license text and [NOTICE](NOTICE) for copyright and third-party notices.
 
 ```text
 🄯 (c)카피레프트 Copyleft — Tran.IDE
-a Bakk jaejin production
+Copyright (C) 2026 Bakk jaejin (a Bakk jaejin production)
 ```
